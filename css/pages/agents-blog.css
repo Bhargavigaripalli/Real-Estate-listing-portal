@@ -1,0 +1,338 @@
+/* --- Agents & Blog Layout Styles --- */
+
+/* Agents Page Grid */
+.agents-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Detailed Agent Card layout */
+.agent-card-premium {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.agent-card-premium:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary);
+}
+.agent-card-img-box {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+.agent-card-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: var(--transition-slow);
+}
+.agent-card-premium:hover .agent-card-img-box img {
+  transform: scale(1.05);
+}
+.agent-card-rating {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(11, 31, 58, 0.85);
+  backdrop-filter: blur(8px);
+  color: var(--secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.agent-card-rating svg {
+  width: 12px;
+  height: 12px;
+  fill: var(--secondary);
+}
+
+.agent-card-body {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.agent-card-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 2px;
+}
+.agent-card-body .designation {
+  color: var(--secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.agent-card-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+  border-top: 1px solid var(--slate-200);
+  border-bottom: 1px solid var(--slate-200);
+  padding: 0.75rem 0;
+  margin-bottom: var(--spacing-md);
+}
+.agent-detail-item h5 {
+  font-size: 0.75rem;
+  color: var(--slate-500);
+  font-weight: 500;
+}
+.agent-detail-item p {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+}
+
+.agent-card-footer {
+  margin-top: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* --- Blog Page Styles --- */
+.blog-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Luxury Blog Card */
+.blog-card {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary);
+}
+.blog-card-img-box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.blog-card-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+.blog-card:hover .blog-card-img-box img {
+  transform: scale(1.06);
+}
+.blog-card-category {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding: 0.2rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+}
+
+.blog-card-body {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.blog-card-meta {
+  font-size: 0.8rem;
+  color: var(--slate-400);
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+.blog-card-title {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+}
+.blog-card-desc {
+  font-size: 0.9rem;
+  color: var(--slate-600);
+  margin-bottom: var(--spacing-md);
+}
+.blog-card-link {
+  margin-top: auto;
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.blog-card-link svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--secondary);
+  transition: var(--transition-fast);
+}
+.blog-card-link:hover svg {
+  transform: translateX(3px);
+}
+
+/* Sidebar Search Widget */
+.blog-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blog-sidebar-widget {
+  padding: var(--spacing-md);
+}
+.blog-sidebar-widget h3 {
+  font-size: 1.15rem;
+  margin-bottom: var(--spacing-md);
+  border-left: 3px solid var(--secondary);
+  padding-left: 0.5rem;
+}
+
+.blog-search-form {
+  position: relative;
+}
+.blog-search-form input {
+  width: 100%;
+  padding: 0.6rem 2.5rem 0.6rem 1rem;
+  border: 1px solid var(--slate-300);
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+}
+.blog-search-form button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.blog-search-form svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--slate-500);
+}
+
+/* Categories tag cloud */
+.blog-categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.blog-category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+.blog-category-item:hover, .blog-category-item.active {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* --- Responsive Media Queries (Agents/Blogs) --- */
+@media (max-width: 992px) {
+  .agents-catalog-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .blog-layout {
+    grid-template-columns: 1fr;
+  }
+  .blogs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .agents-catalog-grid {
+    grid-template-columns: 1fr;
+  }
+  .blogs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Editor Spotlight Section */
+.blog-spotlight {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: var(--spacing-xxl);
+}
+.blog-spotlight-img-box {
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+.blog-spotlight-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Premium Download Guides Section */
+.blog-downloads-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: var(--spacing-lg);
+}
+.download-guide-card {
+  padding: var(--spacing-lg);
+  text-align: center;
+  border: 1px solid var(--slate-200);
+  background-color: var(--white);
+  transition: var(--transition-slow);
+}
+.download-guide-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary);
+}
+.download-guide-card svg {
+  width: 48px;
+  height: 48px;
+  fill: var(--primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+@media (max-width: 992px) {
+  .blog-spotlight {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .blog-downloads-grid {
+    grid-template-columns: 1fr;
+  }
+}

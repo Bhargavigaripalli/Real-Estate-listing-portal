@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details | Stackly Estates</title>
+  <meta name="description" content="Explore photos, features, floor plans, and agent details for this premium estate listing.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/property-details.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+        <span>STACKLY <span class="gold">ESTATES</span></span>
+      </a>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="properties.html" class="nav-link">Properties</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm btn-shimmer">Login</a>
+        <a href="create-account.html" class="btn btn-secondary btn-sm btn-shimmer">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Details Hero Header Placeholder -->
+  <div style="background-color: var(--primary); padding: 100px 0 20px;"></div>
+
+  <!-- Main Body Details Layout -->
+  <main class="container section-padding">
+    <div class="details-layout">
+      <!-- Left Primary Content Column -->
+      <section class="details-main-content">
+        <!-- Gallery slider -->
+        <div class="gallery-container">
+          <div class="gallery-main-wrapper">
+            <img class="gallery-main-img" id="gallery-main-img" src="images/properties/villa-1.jpg" alt="Villa Details" style="cursor: zoom-in;">
+          </div>
+          <div class="gallery-thumbnails" id="gallery-thumbnails">
+            <!-- JS populates thumbnails -->
+          </div>
+        </div>
+
+        <!-- Title, Price and Meta -->
+        <div class="details-header">
+          <div class="details-title-row">
+            <h1 id="details-title">Loading Estate Title...</h1>
+            <span class="details-price" id="details-price">$0</span>
+          </div>
+          <div class="details-meta-tags">
+            <span class="details-meta-tag" id="details-type">Villas</span>
+            <span class="details-meta-tag" id="details-city">Hyderabad</span>
+            <span class="details-meta-tag">Verified Listing</span>
+            <span class="details-meta-tag">Grade-A Scrutinized</span>
+          </div>
+          <p id="details-address" style="font-size: 1rem; color: var(--slate-500); display: flex; align-items: center; gap: 0.5rem;">
+            <svg viewBox="0 0 24 24" style="width: 16px; fill: var(--slate-400);"><path d="M12,2C8.13,2,5,5.13,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.13,15.87,2,12,2z M12,11.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,11.5,12,11.5z"/></svg>
+            Loading address...
+          </p>
+        </div>
+
+        <!-- Specifications summary -->
+        <div class="details-specs">
+          <div class="details-spec-item">
+            <h4>Bedrooms</h4>
+            <p id="details-beds">0</p>
+          </div>
+          <div class="details-spec-item">
+            <h4>Bathrooms</h4>
+            <p id="details-baths">0</p>
+          </div>
+          <div class="details-spec-item">
+            <h4>Total Area</h4>
+            <p><span id="details-area">0</span> SF</p>
+          </div>
+          <div class="details-spec-item">
+            <h4>Car Parking</h4>
+            <p id="details-parking">0</p>
+          </div>
+        </div>
+
+        <!-- Description block -->
+        <div class="details-block">
+          <h3>Property Overview</h3>
+          <p id="details-description">Overview text is loading...</p>
+        </div>
+
+        <!-- Amenities block -->
+        <div class="details-block">
+          <h3>Vetted Amenities</h3>
+          <div class="grid amenities-grid" id="amenities-grid">
+            <!-- JS generates check items -->
+          </div>
+        </div>
+
+        <!-- Floor Plan Block -->
+        <div class="details-block">
+          <h3>Architectural Floor Plan</h3>
+          <div class="floor-plan-box">
+            <img class="floor-plan-img" src="images/properties/kitchen-1.jpg" alt="Floor Plan Blueprint" loading="lazy">
+            <p style="font-size: 0.85rem; color: var(--slate-500); margin-top: 10px;">Vetted structural layout blueprint. Contact advisor to request CAD coordinates.</p>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="details-block">
+          <h3>Geographical Coordinates</h3>
+          <div class="map-placeholder">
+            <div class="map-placeholder-content">
+              <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2,5,5.13,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.13,15.87,2,12,2z M12,11.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,11.5,12,11.5z"/></svg>
+              <h4>Vetted Location Map</h4>
+              <p>GPS Coordinates clearance successfully certified by Stackly Estates legal counsel.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column Sidebar Widgets -->
+      <aside class="details-sidebar">
+        <!-- Agent Card -->
+        <div class="glass-card sidebar-agent-card">
+          <img class="sidebar-agent-avatar" id="agent-avatar" src="images/agents/agent-1.jpg" alt="Agent Advisor">
+          <h4 id="agent-name">Broker Advisor</h4>
+          <p id="agent-designation">Elite Real Estate Specialist</p>
+          
+          <div class="agent-stats">
+            <div class="agent-stat-item">
+              <h5>Experience</h5>
+              <p id="agent-experience">10 Years</p>
+            </div>
+            <div class="agent-stat-item">
+              <h5>Sold</h5>
+              <p id="agent-sold">120+ Deals</p>
+            </div>
+          </div>
+          
+          <a href="404.html" class="btn btn-primary btn-shimmer" style="width: 100%;">Contact Agent</a>
+        </div>
+
+        <!-- Mortgage Calculator Card -->
+        <div class="glass-card mortgage-calculator-card">
+          <h3 style="font-size: 1.15rem; margin-bottom: var(--spacing-md); color: var(--primary);">Mortgage Calculator</h3>
+          <div class="mortgage-sliders">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label" style="display:flex; justify-content:space-between;">
+                <span>Home Price</span>
+                <span id="lbl-mortgage-price" style="color: var(--secondary); font-weight:700;">$0</span>
+              </label>
+              <input type="range" class="range-input" id="mortgage-price" min="100000" max="15000000" step="50000" value="4850000" aria-label="Home Price Slider">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label" style="display:flex; justify-content:space-between;">
+                <span>Down Payment</span>
+                <span id="lbl-mortgage-down" style="color: var(--secondary); font-weight:700;">$0</span>
+              </label>
+              <input type="range" class="range-input" id="mortgage-down" min="10000" max="5000000" step="25000" value="970000" aria-label="Down Payment Slider">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label" style="display:flex; justify-content:space-between;">
+                <span>Interest Rate</span>
+                <span id="lbl-mortgage-rate" style="color: var(--secondary); font-weight:700;">0%</span>
+              </label>
+              <input type="range" class="range-input" id="mortgage-rate" min="1.0" max="15.0" step="0.1" value="6.5" aria-label="Interest Rate Slider">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label" style="display:flex; justify-content:space-between;">
+                <span>Loan Term</span>
+                <span id="lbl-mortgage-term" style="color: var(--secondary); font-weight:700;">0 Years</span>
+              </label>
+              <input type="range" class="range-input" id="mortgage-term" min="5" max="30" step="5" value="20" aria-label="Loan Term Slider">
+            </div>
+          </div>
+
+          <div class="mortgage-output">
+            <span class="mortgage-output-label">Monthly Payment</span>
+            <div class="mortgage-output-price" id="mortgage-payment-output">$0</div>
+            <span style="font-size:0.75rem; color:var(--slate-500);">Excludes taxes, insurance, and HOA.</span>
+          </div>
+        </div>
+
+        <!-- Schedule Visit Card -->
+        <div class="glass-card" style="padding: var(--spacing-lg); margin-top: var(--spacing-lg);">
+          <h3 style="font-size: 1.15rem; margin-bottom: var(--spacing-md); color: var(--primary);">Schedule Private Visit</h3>
+          <form id="visit-schedule-form">
+            <div class="form-group">
+              <label class="form-label" for="visit-date">Preferred Date</label>
+              <input type="date" class="form-control" id="visit-date" required>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="visit-time">Preferred Time Slot</label>
+              <select class="form-control" id="visit-time" required>
+                <option value="10:00 AM">10:00 AM - 12:00 PM</option>
+                <option value="02:00 PM">02:00 PM - 04:00 PM</option>
+                <option value="06:00 PM">06:00 PM - 08:00 PM</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="visit-name">Your Full Name</label>
+              <input type="text" class="form-control" id="visit-name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="visit-email">Email Address</label>
+              <input type="email" class="form-control" id="visit-email" placeholder="john@example.com" required>
+            </div>
+
+            <button type="submit" class="btn btn-secondary btn-shimmer" style="width: 100%;">Book Visit</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Similar Properties Recommendation Block -->
+    <section class="reveal reveal-up" style="margin-top: var(--spacing-xxl);">
+      <h3 style="font-size: 1.6rem; margin-bottom: var(--spacing-lg); border-left: 4px solid var(--secondary); padding-left: 10px;">Similar Premium Estates</h3>
+      <div class="grid similar-properties-grid" id="similar-properties-grid">
+        <!-- JS hydrates recommendations -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+          <span>STACKLY <span class="gold">ESTATES</span></span>
+        </a>
+        <p>India's premier real estate consultancy, representing extraordinary architecture and residential developments. Built on a foundation of trust, discretion, and luxury service.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="properties.html">Our Properties</a></li>
+          <li><a href="agents.html">Elite Advisors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2,5,5.13,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.13,15.87,2,12,2z M12,11.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,11.5,12,11.5z"/></svg>
+          <p>Financial District, Gachibowli, Hyderabad - 500032</p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to receive high-yield off-market property alerts.</p>
+        <form id="footer-newsletter-form">
+          <input type="email" placeholder="Your Email Address" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Stackly Estates. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/property-details.js"></script>
+</body>
+</html>

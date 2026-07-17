@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Stackly Estates</title>
+  <meta name="description" content="Register an account with Stackly Estates to manage wishlists and compare luxury listings.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/auth.css">
+</head>
+<body>
+
+  <!-- Authentication Wrapper -->
+  <div class="auth-wrapper" style="background-image: url('images/properties/villa-2.jpg');">
+    <div class="auth-bg-overlay"></div>
+    <div class="auth-blob auth-blob-1"></div>
+    <div class="auth-blob auth-blob-2"></div>
+
+    <!-- Center Card -->
+    <div class="glass-card auth-card">
+      <div class="auth-header">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+          <span>STACKLY <span class="gold">ESTATES</span></span>
+        </a>
+        <h2>Create Account</h2>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+
+      <form class="auth-form" id="register-form" novalidate>
+        <!-- Full Name -->
+        <div class="form-group">
+          <label class="form-label" for="reg-name">Full Name</label>
+          <input type="text" class="form-control" id="reg-name" placeholder="Enter your name" autocomplete="name" required>
+          <div class="invalid-feedback">Name must be alphabets only (max 16 characters).</div>
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-group">
+          <label class="form-label" for="reg-email">Email Address</label>
+          <input type="email" class="form-control" id="reg-email" placeholder="you@company.com" autocomplete="email" required>
+          <div class="invalid-feedback">Enter a valid email address.</div>
+        </div>
+
+        <!-- Mobile Number -->
+        <div class="form-group">
+          <label class="form-label" for="reg-mobile">Mobile Number</label>
+          <input type="tel" class="form-control" id="reg-mobile" placeholder="10-digit number" autocomplete="tel" required>
+          <div class="invalid-feedback">Exactly 10 digits required.</div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label class="form-label" for="reg-password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" class="form-control" id="reg-password" placeholder="Min 8 characters" autocomplete="new-password" required>
+            <button type="button" class="password-toggle-btn" aria-label="Toggle Password Visibility">
+              <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </button>
+          </div>
+          <!-- Strength Visualizer -->
+          <div class="strength-meter">
+            <div class="strength-meter-bar" id="strength-bar"></div>
+          </div>
+          <div class="invalid-feedback">Must contain uppercase, lowercase, number, and special character.</div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label class="form-label" for="reg-confirm">Confirm Password</label>
+          <div class="password-wrapper">
+            <input type="password" class="form-control" id="reg-confirm" placeholder="Re-enter password" autocomplete="new-password" required>
+            <button type="button" class="password-toggle-btn" aria-label="Toggle Confirm Password Visibility">
+              <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </button>
+          </div>
+          <div class="invalid-feedback">Passwords must match.</div>
+        </div>
+
+        <!-- Terms checkbox -->
+        <div class="terms-option">
+          <input type="checkbox" id="reg-terms" required>
+          <label for="reg-terms">I agree to the <a href="404.html">Terms of Service</a> & <a href="404.html">Privacy Policy</a></label>
+        </div>
+
+        <button type="submit" class="btn btn-secondary btn-shimmer" style="width: 100%; margin-top: var(--spacing-sm);">Create Account</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/auth.js"></script>
+</body>
+</html>

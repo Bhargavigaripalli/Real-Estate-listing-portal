@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly Estates | Luxury Real Estate Listing Portal</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Discover premium luxury villas, penthouses, and commercial spaces with Stackly Estates. India's premier property listing portal offering verified listings and virtual tours.">
+  <meta name="keywords" content="Real Estate, Luxury Villas, Apartments, Stackly Estates, Hyderabad Properties, Worli Penthouse, Chhatarpur Farmhouse">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stackly Estates | Luxury Real Estate Listing Portal">
+  <meta property="og:description" content="Discover premium luxury villas, penthouses, and commercial spaces with India's premier property listing portal.">
+  <meta property="og:image" content="images/properties/villa-1.jpg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container" id="scroll-progress-container">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Sticky Navbar Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="nav-brand-logo">
+        <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+        <span>STACKLY <span class="gold">ESTATES</span></span>
+      </a>
+      
+      <button class="hamburger" id="navbar-hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navbar-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="properties.html" class="nav-link">Properties</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm btn-shimmer">Login</a>
+        <a href="create-account.html" class="btn btn-secondary btn-sm btn-shimmer">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: Hero Area with Advanced Search -->
+  <main>
+    <section class="hero" id="hero-section">
+      <div class="hero-bg" style="background-image: url('images/properties/villa-1.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="skyline-backdrop"></div>
+      
+      <!-- Floating stats badges -->
+      <div class="floating-stat-card stat-card-1 glass-card">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+        <div>
+          <h4>1,480+</h4>
+          <p>Verified Properties</p>
+        </div>
+      </div>
+
+      <div class="floating-stat-card stat-card-2 glass-card">
+        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <div>
+          <h4>4.9 / 5.0</h4>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+
+      <div class="container hero-content">
+        <span class="hero-subtitle">The Epitome of Modern Living</span>
+        <h1 class="hero-title">Discover Your <span>Masterpiece</span> Home</h1>
+        <p class="hero-desc">Connecting discerning clients with the most extraordinary architectural landmarks and luxury estates.</p>
+        
+        <!-- Search bar panel -->
+        <div class="glass-panel search-panel glass-card-dark" id="hero-search-panel">
+          <div class="search-tabs">
+            <button class="search-tab-btn active">Buy</button>
+            <button class="search-tab-btn" onclick="window.location.href='properties.html?type=Commercial'">Rent</button>
+          </div>
+          <div class="search-fields-grid">
+            <div class="search-field">
+              <label for="search-type">Property Type</label>
+              <select id="search-type">
+                <option value="">Any Type</option>
+                <option value="Villas">Villas</option>
+                <option value="Apartments">Apartments</option>
+                <option value="Farm Houses">Farm Houses</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Office Spaces">Office Spaces</option>
+              </select>
+            </div>
+            
+            <div class="search-field">
+              <label for="search-location">Location</label>
+              <select id="search-location">
+                <option value="">Any City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Pune">Pune</option>
+              </select>
+            </div>
+            
+            <div class="search-field">
+              <label for="search-price">Max Budget</label>
+              <select id="search-price">
+                <option value="">No Max</option>
+                <option value="2000000">$2,000,000</option>
+                <option value="4000000">$4,000,000</option>
+                <option value="6000000">$6,000,000</option>
+                <option value="8000000">$8,000,000</option>
+                <option value="12000000">$12,000,000</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label for="search-beds">Bedrooms</label>
+              <select id="search-beds">
+                <option value="">Any Beds</option>
+                <option value="3">3 Bedrooms</option>
+                <option value="4">4 Bedrooms</option>
+                <option value="5">5+ Bedrooms</option>
+              </select>
+            </div>
+
+            <button class="btn btn-secondary btn-shimmer hero-search-btn" id="hero-search-btn">
+              <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: var(--primary);"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Property Categories -->
+    <section class="section-padding container reveal reveal-up" id="categories-section">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Exquisite Portfolios</span>
+        <h2 class="section-title">Select Your Lifestyle Portfolio</h2>
+        <p class="section-desc text-center">Browse our collection categorized by architectural themes and utility classes.</p>
+      </div>
+      <div class="grid categories-grid" id="categories-container">
+        <div class="glass-card category-card" onclick="window.location.href='properties.html?type=Villas'">
+          <div class="category-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 11V3H7v4H3v14h18V11h-4zm-8 8H5v-2h4v2zm0-4H5v-2h4v2zm0-4H5V9h4v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V9h4v2zm0-4h-4V5h4v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg>
+          </div>
+          <h4>Villas</h4>
+          <p>Palatial Living</p>
+        </div>
+
+        <div class="glass-card category-card" onclick="window.location.href='properties.html?type=Apartments'">
+          <div class="category-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 7V3L2 12h3v8h6v-6h2v6h6v-8h3L12 7zm5 11h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+          </div>
+          <h4>Apartments</h4>
+          <p>Skyline Duplexes</p>
+        </div>
+
+        <div class="glass-card category-card" onclick="window.location.href='properties.html?type=Farm Houses'">
+          <div class="category-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          </div>
+          <h4>Farm Houses</h4>
+          <p>Serene Escapes</p>
+        </div>
+
+        <div class="glass-card category-card" onclick="window.location.href='properties.html?type=Commercial'">
+          <div class="category-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm8 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg>
+          </div>
+          <h4>Commercial</h4>
+          <p>Grade-A Assets</p>
+        </div>
+
+        <div class="glass-card category-card" onclick="window.location.href='properties.html?type=Office Spaces'">
+          <div class="category-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+          </div>
+          <h4>Office Spaces</h4>
+          <p>Plug & Play Suites</p>
+        </div>
+
+        <div class="glass-card category-card" onclick="window.location.href='properties.html?type=Luxury Homes'">
+          <div class="category-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <h4>Luxury Homes</h4>
+          <p>Bespoke Design</p>
+        </div>
+
+        <div class="glass-card category-card" onclick="window.location.href='properties.html?type=Plots'">
+          <div class="category-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M23 7V1H1v22h22v-6h-2v4H3V3h18v4h2zm-2 5h-8V9h8v3zm0 4h-8v-3h8v3z"/></svg>
+          </div>
+          <h4>Plots</h4>
+          <p>Gated Acres</p>
+        </div>
+
+        <div class="glass-card category-card" onclick="window.location.href='properties.html'">
+          <div class="category-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          </div>
+          <h4>Explore All</h4>
+          <p>1,480+ Listings</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Featured Properties -->
+    <section class="section-padding reveal reveal-up" style="background-color: var(--slate-50);" id="featured-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Premium Selections</span>
+          <h2 class="section-title">Featured Luxury Estates</h2>
+          <p class="section-desc text-center">A curated portfolio representing only our most remarkable architectural designs.</p>
+        </div>
+        
+        <!-- Hydrated dynamically from data.js, fallback for layout structure -->
+        <div class="grid properties-home-grid" id="properties-home-grid">
+          <!-- JS hydrates this dynamic block -->
+        </div>
+        
+        <div class="text-center">
+          <a href="properties.html" class="btn btn-primary btn-shimmer">View All Properties</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Why Choose Stackly Estates -->
+    <section class="section-padding container reveal reveal-up" id="why-choose-section">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Unmatched Professionalism</span>
+        <h2 class="section-title">Why Choose Stackly Estates</h2>
+        <p class="section-desc text-center">Providing bespoke consulting services that ensure transactions remain seamless and efficient.</p>
+      </div>
+      <div class="grid why-grid">
+        <div class="glass-card why-card">
+          <span class="why-card-num">01</span>
+          <h4>Verified Listings</h4>
+          <p>Every estate undergoes strict property title verification and zoning scrutiny by compliance experts.</p>
+        </div>
+
+        <div class="glass-card why-card">
+          <span class="why-card-num">02</span>
+          <h4>Trusted Advisors</h4>
+          <p>Our brokers hold designations and experience credentials, serving high-net-worth clients globally.</p>
+        </div>
+
+        <div class="glass-card why-card">
+          <span class="why-card-num">03</span>
+          <h4>Guaranteed Pricing</h4>
+          <p>Direct negotiations with builders and property owners guarantee transparency with zero hidden markups.</p>
+        </div>
+
+        <div class="glass-card why-card">
+          <span class="why-card-num">04</span>
+          <h4>Legal Assistance</h4>
+          <p>Complete facilitation of document clearance, registry filing, and tax advisory services.</p>
+        </div>
+
+        <div class="glass-card why-card">
+          <span class="why-card-num">05</span>
+          <h4>Premier Home Loans</h4>
+          <p>Direct integration with premium private banks to clear low-interest mortgage processing within 48 hours.</p>
+        </div>
+
+        <div class="glass-card why-card">
+          <span class="why-card-num">06</span>
+          <h4>Immersive Virtual Tours</h4>
+          <p>High-definition spatial virtual layouts allowing overseas clients to inspect listing dimensions accurately.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Featured Locations -->
+    <section class="section-padding reveal reveal-up" style="background-color: var(--slate-50);" id="locations-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Prominent Locations</span>
+          <h2 class="section-title">Featured Metro Cities</h2>
+          <p class="section-desc text-center">Explore premier high-yield residential communities across metro areas.</p>
+        </div>
+        <div class="grid locations-grid">
+          <div class="location-card" onclick="window.location.href='properties.html?city=Hyderabad'">
+            <img class="location-card-img" src="images/properties/villa-1.jpg" alt="Hyderabad" loading="lazy">
+            <div class="location-card-overlay">
+              <h4>Hyderabad</h4>
+              <p>482 Properties</p>
+            </div>
+          </div>
+
+          <div class="location-card" onclick="window.location.href='properties.html?city=Mumbai'">
+            <img class="location-card-img" src="images/properties/apt-1.jpg" alt="Mumbai" loading="lazy">
+            <div class="location-card-overlay">
+              <h4>Mumbai</h4>
+              <p>295 Properties</p>
+            </div>
+          </div>
+
+          <div class="location-card" onclick="window.location.href='properties.html?city=Bengaluru'">
+            <img class="location-card-img" src="images/properties/apt-2.jpg" alt="Bengaluru" loading="lazy">
+            <div class="location-card-overlay">
+              <h4>Bengaluru</h4>
+              <p>385 Properties</p>
+            </div>
+          </div>
+
+          <div class="location-card" onclick="window.location.href='properties.html?city=Delhi'">
+            <img class="location-card-img" src="images/properties/farm-1.jpg" alt="Delhi" loading="lazy">
+            <div class="location-card-overlay">
+              <h4>Delhi NCR</h4>
+              <p>210 Properties</p>
+            </div>
+          </div>
+
+          <div class="location-card" onclick="window.location.href='properties.html?city=Pune'">
+            <img class="location-card-img" src="images/properties/office-1.jpg" alt="Pune" loading="lazy">
+            <div class="location-card-overlay">
+              <h4>Pune</h4>
+              <p>180 Properties</p>
+            </div>
+          </div>
+
+          <div class="location-card" onclick="window.location.href='properties.html?city=Chennai'">
+            <img class="location-card-img" src="images/properties/villa-2.jpg" alt="Chennai" loading="lazy">
+            <div class="location-card-overlay">
+              <h4>Chennai</h4>
+              <p>145 Properties</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Property Statistics -->
+    <section class="stats-banner text-center" id="statistics-section">
+      <div class="container grid stats-grid">
+        <div class="stat-item">
+          <span class="stat-num" data-target="1480" data-suffix="+">0</span>
+          <span class="stat-label">Properties Sold</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="950" data-suffix="+">0</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="12" data-suffix="+">0</span>
+          <span class="stat-label">Cities Covered</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="45" data-suffix="+">0</span>
+          <span class="stat-label">Expert Agents</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="8" data-suffix="">0</span>
+          <span class="stat-label">Awards Won</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Meet Our Agents -->
+    <section class="section-padding container reveal reveal-up" id="agents-section">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Real Estate Connoisseurs</span>
+        <h2 class="section-title">Meet Our Elite Advisors</h2>
+        <p class="section-desc text-center">Partner with agents who understand the intricacies of transaction clearance.</p>
+      </div>
+      <div class="grid properties-home-grid" id="agents-home-grid">
+        <!-- Rendered dynamically by home.js/data.js -->
+      </div>
+    </section>
+
+    <!-- SECTION 8: Client Testimonials -->
+    <section class="section-padding reveal reveal-up" style="background-color: var(--slate-50);" id="testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Client Accolades</span>
+          <h2 class="section-title">What Our Patrons Say</h2>
+          <p class="section-desc text-center">Hear from our high-profile luxury real estate patrons.</p>
+        </div>
+        
+        <div class="testimonials-slider-container">
+          <div class="testimonials-slider">
+            <div class="testimonial-slide active">
+              <p class="testimonial-quote">"Stackly Estates completely redefined my property hunting experience. Their agents are thorough, professional, and helped me secure our Worli Penthouse completely hassle-free."</p>
+              <img class="testimonial-avatar" src="images/agents/agent-1.jpg" alt="Client 1">
+              <div class="testimonial-author">
+                <h4>Aditya Roy</h4>
+                <p>Chairman, Roy & Co Industries</p>
+              </div>
+            </div>
+            
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">"The legal assistance and loan clearings were fully handled by their back-office team. We closed our Chhatarpur farm estate within 4 days. Absolutely brilliant service!"</p>
+              <img class="testimonial-avatar" src="images/agents/agent-2.jpg" alt="Client 2">
+              <div class="testimonial-author">
+                <h4>Kiran Deshmukh</h4>
+                <p>Co-Founder, BetaTech Global</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-dots">
+            <!-- JS dynamically creates dots -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: Latest Blogs -->
+    <section class="section-padding container reveal reveal-up" id="blogs-section">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Intelligence Hub</span>
+        <h2 class="section-title">Latest Real Estate News</h2>
+        <p class="section-desc text-center">Stay updated with residential investments, market trends, and smart interior layouts.</p>
+      </div>
+      
+      <div class="grid properties-home-grid" id="blogs-home-grid">
+        <!-- Rendered dynamically by data.js -->
+      </div>
+    </section>
+
+    <!-- SECTION 10: FAQ Section -->
+    <section class="section-padding reveal reveal-up" style="background-color: var(--slate-50);" id="faq-section">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Clarify Intent</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc text-center">Everything you need to know about purchasing, registering, and listing properties with Stackly.</p>
+        </div>
+        
+        <div class="accordion-container">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How do you verify properties on Stackly Estates?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+            </button>
+            <div class="accordion-content">
+              <p>Every listed property undergoes physical survey checks and thorough document clearance reviews by our legal team, verifying clear titles, land classifications, and municipal approval stamps before registration.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can NRI clients execute purchase agreements remotely?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+            </button>
+            <div class="accordion-content">
+              <p>Yes. We support secure remote executions through digital power-of-attorney services, verified escrows, and direct spatial walkthrough reviews to ensure complete remote compliance.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Are there processing fees for using the mortgage services?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+            </button>
+            <div class="accordion-content">
+              <p>No. Stackly Estates provides direct, complimentary bank integrations for our patrons. Any loan underwriting processing charges correspond directly to the selected underwriting bank's standard terms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: Newsletter Section -->
+    <section class="section-padding container reveal reveal-up" id="newsletter-section">
+      <div class="glass-card newsletter-card">
+        <h2>Subscribe to the Stackly Brief</h2>
+        <p>Receive exclusive quarterly listings, luxury investment briefings, and early access to development plots directly in your inbox.</p>
+        <form class="newsletter-form" id="home-newsletter-form">
+          <input type="email" placeholder="Your Professional Email Address" aria-label="Email Input" required>
+          <button type="submit" class="btn btn-primary btn-shimmer">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECTION 12: Premium Call to Action -->
+    <section class="premium-cta" id="cta-section">
+      <div class="container premium-cta-content reveal reveal-up">
+        <h2>List Your Premium Property With Stackly</h2>
+        <p>Leverage our elite global client network of high-net-worth investors and modern marketing engines to sell your luxury assets fast and securely.</p>
+        <a href="login.html" class="btn btn-secondary btn-shimmer">Become a Member</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+          <span>STACKLY <span class="gold">ESTATES</span></span>
+        </a>
+        <p>India's premier real estate consultancy, representing extraordinary architecture and residential developments. Built on a foundation of trust, discretion, and luxury service.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"/></svg>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.48.75 2.78 1.9 3.55-.7 0-1.35-.2-1.92-.53v.05c0 2.15 1.53 3.94 3.56 4.35-.37.1-.76.15-1.17.15-.29 0-.57-.03-.85-.08.57 1.77 2.22 3.06 4.17 3.09-1.53 1.2-3.46 1.92-5.55 1.92-.36 0-.72-.02-1.07-.06 1.98 1.27 4.32 2.01 6.84 2.01 8.2 0 12.69-6.79 12.69-12.7 0-.19 0-.39-.01-.58.87-.63 1.63-1.41 2.23-2.31z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="properties.html">Our Properties</a></li>
+          <li><a href="agents.html">Elite Advisors</a></li>
+          <li><a href="blog.html">Market Insights</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2,5,5.13,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.13,15.87,2,12,2z M12,11.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,11.5,12,11.5z"/></svg>
+          <p>Financial District, Gachibowli, Hyderabad - 500032</p>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <p>+91 40 4000 8000</p>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <p>concierge@stacklyestates.com</p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to receive high-yield off-market property alerts.</p>
+        <form id="footer-newsletter-form">
+          <input type="email" placeholder="Your Email Address" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Stackly Estates. All Rights Reserved. Designed by Senior Frontend Consultants.</p>
+      <ul class="footer-bottom-links">
+        <li><a href="404.html">Terms of Service</a></li>
+        <li><a href="404.html">Privacy Policy</a></li>
+        <li><a href="404.html">Cookie Controls</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script>
+    // Hydrate Home page properties & agents
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('properties-home-grid');
+      const agentsGrid = document.getElementById('agents-home-grid');
+      const blogsGrid = document.getElementById('blogs-home-grid');
+
+      // Hydrate 3 featured properties
+      if (grid) {
+        grid.innerHTML = '';
+        const featured = PROPERTIES.filter(p => p.featured).slice(0, 3);
+        featured.forEach(p => {
+          grid.innerHTML += `
+            <div class="glass-card property-card reveal reveal-up reveal-visible">
+              <div class="property-card-img-wrapper">
+                <img class="property-card-img" src="${p.image}" alt="${p.title}" loading="lazy">
+                <span class="property-badge">Featured</span>
+                <span class="property-card-price">${p.price}</span>
+              </div>
+              <div class="property-card-content">
+                <span class="property-card-tag">${p.type}</span>
+                <h3 class="property-card-title">${p.title}</h3>
+                <div class="property-card-address">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2,5,5.13,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.13,15.87,2,12,2z M12,11.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,11.5,12,11.5z"/></svg>
+                  <span>${p.city}</span>
+                </div>
+                <div class="property-card-footer">
+                  <a href="property-details.html?id=${p.id}" class="btn btn-outline-gold btn-sm btn-shimmer">View Details</a>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      }
+
+      // Hydrate agents
+      if (agentsGrid) {
+        agentsGrid.innerHTML = '';
+        AGENTS.slice(0, 3).forEach(a => {
+          agentsGrid.innerHTML += `
+            <div class="glass-card property-card reveal reveal-up reveal-visible" style="padding: 0; text-align: center;">
+              <div style="overflow: hidden; height: 260px; position: relative;">
+                <img src="${a.image}" alt="${a.name}" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+                <span style="position: absolute; top: 10px; left: 10px; background: rgba(11,31,58,0.85); color: var(--secondary); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">★ ${a.rating}</span>
+              </div>
+              <div style="padding: 1.5rem;">
+                <h4 style="margin-bottom: 2px;">${a.name}</h4>
+                <p style="color: var(--secondary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 1rem;">${a.designation}</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--slate-200); padding-top: 0.75rem; margin-bottom: 1rem;">
+                  <div>
+                    <span style="font-size: 0.75rem; color: var(--slate-500);">Experience</span>
+                    <h5 style="margin: 0; font-size: 0.95rem;">${a.experience}</h5>
+                  </div>
+                  <div>
+                    <span style="font-size: 0.75rem; color: var(--slate-500);">Sold</span>
+                    <h5 style="margin: 0; font-size: 0.95rem;">${a.sold}+ Deals</h5>
+                  </div>
+                </div>
+                <a href="404.html" class="btn btn-outline-gold btn-sm" style="width: 100%;">Contact Agent</a>
+              </div>
+            </div>
+          `;
+        });
+      }
+
+      // Hydrate blogs
+      if (blogsGrid) {
+        blogsGrid.innerHTML = '';
+        BLOGS.forEach(b => {
+          blogsGrid.innerHTML += `
+            <div class="glass-card property-card reveal reveal-up reveal-visible">
+              <div style="position: relative; height: 180px; overflow: hidden;">
+                <img src="${b.image}" alt="${b.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                <span style="position: absolute; bottom: 10px; left: 10px; background: var(--secondary); color: var(--primary); font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;">${b.category}</span>
+              </div>
+              <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+                <span style="font-size: 0.8rem; color: var(--slate-400); margin-bottom: 0.5rem;">${b.date} • By ${b.author}</span>
+                <h4 style="font-size: 1.1rem; line-height: 1.4; margin-bottom: 0.5rem; font-weight: 600;">${b.title}</h4>
+                <p style="font-size: 0.85rem; color: var(--slate-600); margin-bottom: 1rem;">${b.summary}</p>
+                <a href="404.html" class="btn btn-outline-gold btn-sm btn-shimmer" style="margin-top: auto;">Read More</a>
+              </div>
+            </div>
+          `;
+        });
+      }
+
+      // Newsletter alert mocks
+      const nForm1 = document.getElementById('home-newsletter-form');
+      const nForm2 = document.getElementById('footer-newsletter-form');
+      const showSuccessMsg = (e) => {
+        e.preventDefault();
+        alert("Subscription successful! Welcome to the Stackly Brief.");
+        e.target.reset();
+      };
+      if (nForm1) nForm1.addEventListener('submit', showSuccessMsg);
+      if (nForm2) nForm2.addEventListener('submit', showSuccessMsg);
+    });
+  </script>
+</body>
+</html>

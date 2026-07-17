@@ -1,0 +1,102 @@
+/* --- Contact Page Specific Styles --- */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Contact Info Box */
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.contact-info-card {
+  padding: var(--spacing-md);
+  border-left: 3px solid var(--secondary);
+}
+.contact-info-card-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--slate-100);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-sm);
+  border: 1px solid var(--slate-200);
+}
+.contact-info-card-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary);
+}
+.contact-info-card h4 {
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+}
+.contact-info-card p {
+  font-size: 0.85rem;
+}
+
+/* Business Enquiry vs General Inquiry Tabs */
+.form-tab-container {
+  padding: var(--spacing-lg);
+}
+.form-tabs {
+  display: flex;
+  border-bottom: 2px solid var(--slate-200);
+  margin-bottom: var(--spacing-lg);
+  gap: 1.5rem;
+}
+.form-tab-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--slate-400);
+  cursor: pointer;
+  padding-bottom: var(--spacing-xs);
+  position: relative;
+}
+.form-tab-btn.active {
+  color: var(--primary);
+}
+.form-tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary);
+}
+
+.contact-form-pane {
+  display: none;
+}
+.contact-form-pane.active {
+  display: block;
+}
+
+/* --- Responsive Media Queries (Contact) --- */
+@media (max-width: 992px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

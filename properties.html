@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties Portfolio | Stackly Estates</title>
+  <meta name="description" content="Search and filter high-end luxury villas, penthouses, commercial suites, and development plots across India.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/properties.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+        <span>STACKLY <span class="gold">ESTATES</span></span>
+      </a>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="properties.html" class="nav-link active">Properties</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm btn-shimmer">Login</a>
+        <a href="create-account.html" class="btn btn-secondary btn-sm btn-shimmer">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <div style="background-color: var(--primary); padding: 130px 0 60px; text-align: center; color: var(--white); relative; overflow: hidden;">
+    <div class="container relative" style="z-index: 2;">
+      <h1 style="color: var(--white); font-family: var(--font-serif); font-size: 2.8rem; margin-bottom: var(--spacing-xs);">Luxury Estates Portfolio</h1>
+      <p style="color: var(--slate-300);">Vetted residences, penthouses, and corporate suites representing architectural mastery.</p>
+    </div>
+  </div>
+
+  <!-- Properties Main Catalog Layout -->
+  <main class="container section-padding">
+    <div class="properties-layout">
+      <!-- Filter Sidebar Panel -->
+      <aside class="glass-card filter-sidebar" id="filter-sidebar">
+        <div class="filter-section">
+          <h3 class="filter-title">Keyword Search</h3>
+          <div class="form-group" style="margin-bottom: 0;">
+            <input type="text" class="form-control" id="filter-search" placeholder="e.g. Crest, Worli, Villa">
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3 class="filter-title">Location / City</h3>
+          <select class="form-control" id="filter-city">
+            <option value="">All Cities</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi NCR</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Pune">Pune</option>
+          </select>
+        </div>
+
+        <div class="filter-section">
+          <h3 class="filter-title">Property Type</h3>
+          <select class="form-control" id="filter-type">
+            <option value="">All Types</option>
+            <option value="Villas">Villas</option>
+            <option value="Apartments">Apartments</option>
+            <option value="Farm Houses">Farm Houses</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Office Spaces">Office Spaces</option>
+            <option value="Plots">Plots</option>
+            <option value="Luxury Homes">Luxury Homes</option>
+          </select>
+        </div>
+
+        <div class="filter-section">
+          <h3 class="filter-title">Bedrooms</h3>
+          <select class="form-control" id="filter-beds">
+            <option value="">Any Beds</option>
+            <option value="3">3 Beds</option>
+            <option value="4">4 Beds</option>
+            <option value="5">5+ Beds</option>
+          </select>
+        </div>
+
+        <div class="filter-section">
+          <h3 class="filter-title">Max Budget</h3>
+          <div class="slider-container">
+            <input type="range" class="range-input" id="filter-price" min="500000" max="15000000" step="250000" value="12000000">
+            <div class="price-slider-values">
+              <span>Min: $500k</span>
+              <span id="price-val" style="font-weight: 700; color: var(--secondary);">$12.0M</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3 class="filter-title">Max Area</h3>
+          <div class="slider-container">
+            <input type="range" class="range-input" id="filter-area" min="1000" max="400000" step="5000" value="400000">
+            <div class="area-slider-values">
+              <span>Min: 1,000 SF</span>
+              <span id="area-val" style="font-weight: 700; color: var(--secondary);">400,000 Sq Ft</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Property Cards Grid Area -->
+      <section class="catalog-content">
+        <!-- Toolbar -->
+        <div class="catalog-toolbar">
+          <div class="catalog-results-count" id="results-count">10 Properties Found</div>
+          
+          <div class="catalog-toolbar-actions">
+            <select class="sort-select" id="sort-select" aria-label="Sort Properties">
+              <option value="featured">Sort: Featured First</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="area">Area: Large to Small</option>
+            </select>
+            
+            <div class="view-toggles">
+              <button class="view-toggle-btn active" id="view-grid-btn" aria-label="Grid View">
+                <svg viewBox="0 0 24 24"><path d="M4 11h5V5H4v6zm0 8h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-8h5V5h-5v6zm6-6v6h5V5h-5z"/></svg>
+              </button>
+              <button class="view-toggle-btn" id="view-list-btn" aria-label="List View">
+                <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zm0-8h14V7H7v2z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hydrated properties grid wrapper -->
+        <div class="properties-catalog-grid" id="properties-catalog-grid">
+          <!-- JS generates property cards or shimmers -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Floating Compare Bottom Action Bar -->
+  <div class="compare-bar" id="compare-bar">
+    <div class="compare-bar-info">
+      <h4>Compare Estates</h4>
+      <p id="compare-count">0 properties selected</p>
+    </div>
+    <div class="compare-bar-actions">
+      <button class="btn btn-outline btn-sm" id="compare-clear-btn">Clear</button>
+      <a href="404.html" class="btn btn-secondary btn-sm btn-shimmer">Compare Now</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+          <span>STACKLY <span class="gold">ESTATES</span></span>
+        </a>
+        <p>India's premier real estate consultancy, representing extraordinary architecture and residential developments. Built on a foundation of trust, discretion, and luxury service.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="properties.html">Our Properties</a></li>
+          <li><a href="agents.html">Elite Advisors</a></li>
+          <li><a href="blog.html">Market Insights</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2,5,5.13,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.13,15.87,2,12,2z M12,11.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,11.5,12,11.5z"/></svg>
+          <p>Financial District, Gachibowli, Hyderabad - 500032</p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to receive high-yield off-market property alerts.</p>
+        <form id="footer-newsletter-form">
+          <input type="email" placeholder="Your Email Address" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Stackly Estates. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/properties.js"></script>
+</body>
+</html>

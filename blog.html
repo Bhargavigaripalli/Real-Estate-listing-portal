@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Insights & News | Stackly Estates</title>
+  <meta name="description" content="Read expert real estate advice, smart home design guides, and national residential investment tips.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/agents-blog.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+        <span>STACKLY <span class="gold">ESTATES</span></span>
+      </a>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="properties.html" class="nav-link">Properties</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline btn-sm btn-shimmer">Login</a>
+        <a href="create-account.html" class="btn btn-secondary btn-sm btn-shimmer">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: Hero Header -->
+    <section style="background-color: var(--primary); padding: 130px 0 60px; text-align: center; color: var(--white); relative; overflow: hidden;">
+      <div class="container relative" style="z-index: 2;">
+        <span class="section-subtitle">Stackly Intelligence</span>
+        <h1 style="color: var(--white); font-family: var(--font-serif); font-size: 2.8rem; margin-bottom: var(--spacing-xs);">Stackly Intelligence Hub</h1>
+        <p style="color: var(--slate-300);">Assess high-yield investment structures, smart design trends, and tax compliance briefings.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Editor's Pick Spotlight Split Banner -->
+    <section class="container section-padding reveal reveal-up" id="spotlight-section">
+      <div class="blog-spotlight">
+        <div class="blog-spotlight-img-box">
+          <img src="images/properties/office-1.jpg" alt="Future Financial District Office Tower" loading="lazy" style="object-position: center top;">
+          <span style="position: absolute; top: 1rem; left: 1rem; background: var(--secondary); color: var(--primary); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 4px;">Editor's Pick</span>
+        </div>
+        <div style="padding: 1rem 0;">
+          <span class="section-subtitle">Featured Insight</span>
+          <h2 style="font-family: var(--font-serif); margin-bottom: var(--spacing-sm); line-height: 1.3;">High-Yield Opportunities in Hyderabad's Financial District</h2>
+          <p style="color: var(--slate-600); margin-bottom: var(--spacing-md); font-size: 1rem; line-height: 1.6;">An in-depth analysis of capital returns, tax structures, infrastructure developments, and growth indicators in premium commercial real estate zones for Q3 2026.</p>
+          <div style="font-size: 0.85rem; color: var(--slate-400); margin-bottom: var(--spacing-lg);">
+            <span>By Vikram Malhotra</span> • <span>8 min read</span>
+          </div>
+          <a href="404.html" class="btn btn-secondary btn-shimmer">Explore Analysis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Main Articles Catalog & Sidebar Feed -->
+    <section class="container section-padding reveal reveal-up" id="feed-section" style="background-color: var(--slate-50); border-top: 1px solid var(--slate-200); border-bottom: 1px solid var(--slate-200);">
+      <div class="section-header">
+        <span class="section-subtitle">Catalog</span>
+        <h2>Browse Recent Insights</h2>
+      </div>
+      
+      <div class="blog-layout">
+        <!-- Blog Feed List -->
+        <div class="blogs-grid" id="blogs-grid">
+          <!-- Rendered dynamically by data.js data records, fallback html layout below -->
+          <div class="glass-card property-card blog-card reveal reveal-up">
+            <div class="blog-card-img-box">
+              <img src="images/blogs/blog-1.jpg" alt="Portfolio Management" loading="lazy">
+              <span class="blog-card-category">Investment</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>July 12, 2026</span>
+                <span>By Rajesh Kulkarni</span>
+              </div>
+              <h3 class="blog-card-title">How to Build a Diverse Real Estate Portfolio in India</h3>
+              <p class="blog-card-desc">Exploring the dynamic growth metrics of Indian high-end real estate, assessing residential vs commercial developments for high returns.</p>
+              <a href="404.html" class="blog-card-link">
+                Read More
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="glass-card property-card blog-card reveal reveal-up">
+            <div class="blog-card-img-box">
+              <img src="images/blogs/blog-2.jpg" alt="Smart Home Design" loading="lazy">
+              <span class="blog-card-category">Design</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>June 28, 2026</span>
+                <span>By Aanya Sen</span>
+              </div>
+              <h3 class="blog-card-title">Designing the Ultimate Smart Home: Trends for 2026</h3>
+              <p class="blog-card-desc">From glass walls that adapt to outside lighting to touchless environments, discover the luxury tech changing modern lifestyles.</p>
+              <a href="404.html" class="blog-card-link">
+                Read More
+                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Filters and Categories -->
+        <aside class="blog-sidebar">
+          <div class="glass-card blog-sidebar-widget">
+            <h3>Search News</h3>
+            <form class="blog-search-form" onsubmit="e => e.preventDefault()">
+              <input type="text" placeholder="Search keywords..." required>
+              <button type="submit" aria-label="Search Submit">
+                <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="glass-card blog-sidebar-widget">
+            <h3>Blog Categories</h3>
+            <div class="blog-categories-list">
+              <div class="blog-category-item active">All Insights</div>
+              <div class="blog-category-item" onclick="window.location.href='404.html'">Investment</div>
+              <div class="blog-category-item" onclick="window.location.href='404.html'">Design Trends</div>
+              <div class="blog-category-item" onclick="window.location.href='404.html'">Property Advice</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Premium Market Reports Download Grid -->
+    <section class="container section-padding reveal reveal-up" id="downloads-section">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Acquisitions Desk</span>
+        <h2>Acquisition Guides & Reports</h2>
+        <p class="section-desc text-center">Download detailed compliance documentation, tax logs, and real estate market indexes curated by our analysts.</p>
+      </div>
+      
+      <div class="blog-downloads-grid">
+        <div class="glass-card download-guide-card">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-6 11.5v-3.5H9v-2h4V7l4 4.5-4 4.5z"/></svg>
+          <h4>Q3 Luxury Real Estate Report</h4>
+          <p style="font-size: 0.85rem; color: var(--slate-500); margin: 0.5rem 0 1.5rem;">Indian prime residential returns index • PDF (4.2 MB)</p>
+          <a href="404.html" class="btn btn-outline-gold btn-sm btn-shimmer" style="width: 100%;">Download Report</a>
+        </div>
+
+        <div class="glass-card download-guide-card">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-6 11.5v-3.5H9v-2h4V7l4 4.5-4 4.5z"/></svg>
+          <h4>HNW Investor Tax Guide</h4>
+          <p style="font-size: 0.85rem; color: var(--slate-500); margin: 0.5rem 0 1.5rem;">Registry filings and compliance frameworks • PDF (2.8 MB)</p>
+          <a href="404.html" class="btn btn-outline-gold btn-sm btn-shimmer" style="width: 100%;">Download Guide</a>
+        </div>
+
+        <div class="glass-card download-guide-card">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-6 11.5v-3.5H9v-2h4V7l4 4.5-4 4.5z"/></svg>
+          <h4>NRI Regulatory Framework</h4>
+          <p style="font-size: 0.85rem; color: var(--slate-500); margin: 0.5rem 0 1.5rem;">Acquisitions and power-of-attorney files • PDF (3.5 MB)</p>
+          <a href="404.html" class="btn btn-outline-gold btn-sm btn-shimmer" style="width: 100%;">Download Framework</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+          <span>STACKLY <span class="gold">ESTATES</span></span>
+        </a>
+        <p>India's premier real estate consultancy, representing extraordinary architecture and residential developments.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="properties.html">Our Properties</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2,5,5.13,5,9c0,5.25,7,13,7,13s7-7.75,7-13C19,5.13,15.87,2,12,2z M12,11.5c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5S13.38,11.5,12,11.5z"/></svg>
+          <p>Financial District, Gachibowli, Hyderabad - 500032</p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to receive high-yield off-market property alerts.</p>
+        <form id="footer-newsletter-form">
+          <input type="email" placeholder="Your Email Address" required>
+          <button type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Stackly Estates. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

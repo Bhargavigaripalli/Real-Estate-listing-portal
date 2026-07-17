@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Stackly Estates Console</title>
+  <meta name="description" content="Manage listings approval workflows, customer metrics, and advisory boards.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/dashboards.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <!-- Mobile top header bar -->
+    <div class="dashboard-mobile-bar">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 24 24" style="width: 24px; fill: var(--secondary);"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+        <span>STACKLY</span>
+      </a>
+      <button class="sidebar-toggle-btn" aria-label="Toggle Side Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </button>
+    </div>
+
+    <!-- Sidebar Layout panel -->
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
+          <span>STACKLY <span class="gold">ESTATES</span></span>
+        </a>
+      </div>
+
+      <ul class="sidebar-menu">
+        <li class="sidebar-item">
+          <a href="admin-dashboard.html" class="sidebar-link active">
+            <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+            Dashboard
+          </a>
+        </li>
+        <!-- All sidebar items except Logout redirect to 404.html -->
+        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M12 7V3L2 12h3v8h6v-6h2v6h6v-8h3L12 7zm5 11h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg> Properties</a></li>
+        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Agents</a></li>
+        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S11.3 5 9.6 5C7.94 5 6.6 6.34 6.6 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg> Customers</a></li>
+        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg> Bookings</a></li>
+        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.1 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg> Revenue</a></li>
+        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg> Reports</a></li>
+        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2z"/></svg> Analytics</a></li>
+        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg> Settings</a></li>
+        
+        <li class="sidebar-item" style="margin-top: auto;">
+          <a href="login.html" class="sidebar-link" style="color: #EF4444;">
+            <svg viewBox="0 0 24 24" style="fill: #EF4444;"><path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+            Logout
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-user-badge">
+        <img class="sidebar-user-avatar" src="images/agents/agent-1.jpg" alt="Admin Avatar">
+        <div class="sidebar-user-name">
+          <h5>Vikram Malhotra</h5>
+          <p>Super Administrator</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Board -->
+    <main class="dashboard-main">
+      <div class="dashboard-header-row">
+        <div>
+          <h1>Admin Console</h1>
+          <p style="color: var(--slate-500);">Review macro revenue lines, approvals queue, and global properties listings.</p>
+        </div>
+      </div>
+
+      <!-- KPI Grid -->
+      <section class="dashboard-kpis">
+        <div class="kpi-card">
+          <div class="kpi-details">
+            <h4>Sales Revenue</h4>
+            <p>$18.4M</p>
+          </div>
+          <div class="kpi-icon-box green">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 12.9 12 13.5 12 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H6c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-details">
+            <h4>Active Listings</h4>
+            <p>1,482 Listings</p>
+          </div>
+          <div class="kpi-icon-box blue">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-details">
+            <h4>Booking Requests</h4>
+            <p>24 Requests</p>
+          </div>
+          <div class="kpi-icon-box gold">
+            <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-details">
+            <h4>Active Brokers</h4>
+            <p>45 Agents</p>
+          </div>
+          <div class="kpi-icon-box sky">
+            <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Charts & Feeds Layout -->
+      <div class="grid dashboard-grid-2">
+        <!-- Revenue line chart panel -->
+        <div style="display:flex; flex-direction:column; gap:2rem;">
+          <div class="dashboard-panel-card">
+            <h3>Sales & Deals Volume (H1 2026)</h3>
+            <div class="chart-container">
+              <svg class="chart-svg" id="chart-svg">
+                <defs>
+                  <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--secondary)" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="var(--secondary)" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <!-- Generated dynamically by dashboards.js -->
+              </svg>
+            </div>
+          </div>
+
+          <!-- Approvals queue -->
+          <div class="dashboard-panel-card">
+            <h3>Pending Registry Approvals</h3>
+            <div class="dashboard-table-wrapper">
+              <table class="dashboard-table">
+                <thead>
+                  <tr>
+                    <th>Listing Name</th>
+                    <th>Submitting Advisor</th>
+                    <th>City</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>The Obsidian Glass Mansion</strong></td>
+                    <td>Vikram Malhotra</td>
+                    <td>Delhi</td>
+                    <td><button class="btn btn-primary btn-sm" onclick="alert('Vetted property successfully approved and published!')" style="padding:0.25rem 0.75rem; font-size:0.8rem;">Approve</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Apex Corporate Suite</strong></td>
+                    <td>Aanya Sen</td>
+                    <td>Pune</td>
+                    <td><button class="btn btn-primary btn-sm" onclick="alert('Vetted property successfully approved and published!')" style="padding:0.25rem 0.75rem; font-size:0.8rem;">Approve</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column calendar schedule & notifications list -->
+        <div style="display:flex; flex-direction:column; gap:2rem;">
+          <!-- Active timeline -->
+          <div class="dashboard-panel-card">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; border-bottom: 1px solid var(--slate-100); padding-bottom:0.5rem;">
+              <h3 style="margin:0; border:none; padding:0;">Alert Notifications</h3>
+              <button class="btn btn-outline-gold btn-sm" id="clear-notify-btn" style="padding:2px 8px; font-size:0.75rem;">Clear All</button>
+            </div>
+            
+            <div class="activity-timeline">
+              <div class="timeline-event">
+                <span class="timeline-event-dot"></span>
+                <div class="timeline-event-info">
+                  <h5>New Account Created</h5>
+                  <p>Patron Bhargavi registered from Hyderabad.</p>
+                </div>
+              </div>
+
+              <div class="timeline-event">
+                <span class="timeline-event-dot"></span>
+                <div class="timeline-event-info">
+                  <h5>Booking Request Filed</h5>
+                  <p>ECR Beachside Villa slot booked by Client A.</p>
+                </div>
+              </div>
+
+              <div class="timeline-event">
+                <span class="timeline-event-dot"></span>
+                <div class="timeline-event-info">
+                  <h5>Plot title uploaded</h5>
+                  <p>Plot-10 clearance uploaded by Rajesh K.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calendar -->
+          <div class="dashboard-panel-card">
+            <h3>Broker Briefing Agenda</h3>
+            <div style="display:flex; flex-direction:column; gap:0.5rem;">
+              <div style="padding:0.5rem; background:var(--slate-50); border-radius:4px; font-size:0.85rem;">
+                <strong>10:00 AM</strong> - Weekly Advisor Pipeline Sync
+              </div>
+              <div style="padding:0.5rem; background:var(--slate-50); border-radius:4px; font-size:0.85rem;">
+                <strong>03:00 PM</strong> - Compliance Board Title Audit
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/dashboards.js"></script>
+</body>
+</html>
