@@ -485,7 +485,7 @@
         <p>Receive exclusive quarterly listings, luxury investment briefings, and early access to development plots directly in your inbox.</p>
         <form class="newsletter-form" id="home-newsletter-form">
           <input type="email" placeholder="Your Professional Email Address" aria-label="Email Input" required>
-          <button type="submit" class="btn btn-primary btn-shimmer">Subscribe</button>
+          <button type="submit" class="btn btn-primary btn-shimmer">Send Message</button>
         </form>
       </div>
     </section>
@@ -504,19 +504,19 @@
   <footer>
     <div class="container footer-grid">
       <div class="footer-col footer-about">
-        <a href="index.html" class="logo">
+        <a href="404.html" class="logo">
           <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
           <span>STACKLY <span class="gold">ESTATES</span></span>
         </a>
         <p>India's premier real estate consultancy, representing extraordinary architecture and residential developments. Built on a foundation of trust, discretion, and luxury service.</p>
         <div class="footer-socials">
-          <a href="#" class="footer-social-btn" aria-label="Facebook">
+          <a href="404.html" class="footer-social-btn" aria-label="Facebook">
             <svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"/></svg>
           </a>
-          <a href="#" class="footer-social-btn" aria-label="LinkedIn">
+          <a href="404.html" class="footer-social-btn" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
           </a>
-          <a href="#" class="footer-social-btn" aria-label="Twitter">
+          <a href="404.html" class="footer-social-btn" aria-label="Twitter">
             <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.48.75 2.78 1.9 3.55-.7 0-1.35-.2-1.92-.53v.05c0 2.15 1.53 3.94 3.56 4.35-.37.1-.76.15-1.17.15-.29 0-.57-.03-.85-.08.57 1.77 2.22 3.06 4.17 3.09-1.53 1.2-3.46 1.92-5.55 1.92-.36 0-.72-.02-1.07-.06 1.98 1.27 4.32 2.01 6.84 2.01 8.2 0 12.69-6.79 12.69-12.7 0-.19 0-.39-.01-.58.87-.63 1.63-1.41 2.23-2.31z"/></svg>
           </a>
         </div>
@@ -525,11 +525,10 @@
       <div class="footer-col">
         <h3>Quick Links</h3>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="properties.html">Our Properties</a></li>
-          <li><a href="agents.html">Elite Advisors</a></li>
-          <li><a href="blog.html">Market Insights</a></li>
+          <li><a href="404.html">Home</a></li>
+          <li><a href="404.html">About Us</a></li>
+          <li><a href="404.html">Our Properties</a></li>
+          <li><a href="404.html">Market Insights</a></li>
         </ul>
       </div>
 
@@ -554,7 +553,7 @@
         <p>Subscribe to receive high-yield off-market property alerts.</p>
         <form id="footer-newsletter-form">
           <input type="email" placeholder="Your Email Address" required>
-          <button type="submit">Go</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </div>
@@ -659,16 +658,14 @@
         });
       }
 
-      // Newsletter alert mocks
+      // Newsletter submit logic -> 404.html
       const nForm1 = document.getElementById('home-newsletter-form');
-      const nForm2 = document.getElementById('footer-newsletter-form');
-      const showSuccessMsg = (e) => {
-        e.preventDefault();
-        alert("Subscription successful! Welcome to the Stackly Brief.");
-        e.target.reset();
-      };
-      if (nForm1) nForm1.addEventListener('submit', showSuccessMsg);
-      if (nForm2) nForm2.addEventListener('submit', showSuccessMsg);
+      if (nForm1) {
+        nForm1.addEventListener('submit', (e) => {
+          e.preventDefault();
+          window.location.href = '404.html';
+        });
+      }
     });
   </script>
 </body>

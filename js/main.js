@@ -138,24 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Native Intersection Observer for Scroll Reveals ---
   const revealElements = document.querySelectorAll('.reveal');
-  if (revealElements.length > 0) {
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal-visible');
-          // Unobserve if we only want it to animate once
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.15,
-      rootMargin: '0px 0px -50px 0px'
-    });
-
-    revealElements.forEach(el => {
-      revealObserver.observe(el);
-    });
-  }
+  revealElements.forEach(el => {
+    el.classList.add('reveal-visible');
+  });
 
   // --- Lazy Loading Support for Images ---
   if ('IntersectionObserver' in window) {
@@ -177,4 +162,18 @@ document.addEventListener('DOMContentLoaded', () => {
       imageObserver.observe(image);
     });
   }
+
+  // --- Global Newsletter & Footer Form Submit Handler ---
+  document.addEventListener('submit', (e) => {
+    const form = e.target;
+    if (form && (
+      form.id === 'home-newsletter-form' ||
+      form.id === 'footer-newsletter-form' ||
+      form.classList.contains('newsletter-form') ||
+      form.closest('footer')
+    )) {
+      e.preventDefault();
+      window.location.href = '404.html';
+    }
+  });
 });

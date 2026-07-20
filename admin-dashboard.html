@@ -34,20 +34,19 @@
 
       <ul class="sidebar-menu">
         <li class="sidebar-item">
-          <a href="admin-dashboard.html" class="sidebar-link active">
+          <a href="#" data-tab="admin-tab-dashboard" class="sidebar-link active">
             <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
             Dashboard
           </a>
         </li>
-        <!-- All sidebar items except Logout redirect to 404.html -->
-        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M12 7V3L2 12h3v8h6v-6h2v6h6v-8h3L12 7zm5 11h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg> Properties</a></li>
-        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Agents</a></li>
-        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S11.3 5 9.6 5C7.94 5 6.6 6.34 6.6 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg> Customers</a></li>
-        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg> Bookings</a></li>
-        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.1 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg> Revenue</a></li>
-        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg> Reports</a></li>
-        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2z"/></svg> Analytics</a></li>
-        <li class="sidebar-item"><a href="404.html" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg> Settings</a></li>
+        <li class="sidebar-item"><a href="#" data-tab="admin-tab-properties" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M12 7V3L2 12h3v8h6v-6h2v6h6v-8h3L12 7zm5 11h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg> Properties</a></li>
+        <li class="sidebar-item"><a href="#" data-tab="admin-tab-agents" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Agents</a></li>
+        <li class="sidebar-item"><a href="#" data-tab="admin-tab-customers" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S11.3 5 9.6 5C7.94 5 6.6 6.34 6.6 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg> Customers</a></li>
+        <li class="sidebar-item"><a href="#" data-tab="admin-tab-bookings" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg> Bookings</a></li>
+        <li class="sidebar-item"><a href="#" data-tab="admin-tab-revenue" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.1 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg> Revenue</a></li>
+        <li class="sidebar-item"><a href="#" data-tab="admin-tab-reports" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg> Reports</a></li>
+        <li class="sidebar-item"><a href="#" data-tab="admin-tab-analytics" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2z"/></svg> Analytics</a></li>
+        <li class="sidebar-item"><a href="#" data-tab="admin-tab-settings" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg> Settings</a></li>
         
         <li class="sidebar-item" style="margin-top: auto;">
           <a href="login.html" class="sidebar-link" style="color: #EF4444;">
@@ -68,155 +67,453 @@
 
     <!-- Main Content Board -->
     <main class="dashboard-main">
-      <div class="dashboard-header-row">
-        <div>
-          <h1>Admin Console</h1>
-          <p style="color: var(--slate-500);">Review macro revenue lines, approvals queue, and global properties listings.</p>
+      <!-- PANEL 1: Admin Overview -->
+      <div class="dashboard-tab-panel active" id="admin-tab-dashboard">
+        <div class="dashboard-header-row">
+          <div>
+            <h1>Admin Console</h1>
+            <p style="color: var(--slate-500);">Review macro revenue lines, approvals queue, and global properties listings.</p>
+          </div>
+        </div>
+
+        <!-- KPI Grid -->
+        <section class="dashboard-kpis">
+          <div class="kpi-card">
+            <div class="kpi-details">
+              <h4>Sales Revenue</h4>
+              <p>$18.4M</p>
+            </div>
+            <div class="kpi-icon-box green">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 12.9 12 13.5 12 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H6c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-details">
+              <h4>Active Listings</h4>
+              <p>1,482 Listings</p>
+            </div>
+            <div class="kpi-icon-box blue">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-details">
+              <h4>Booking Requests</h4>
+              <p>24 Requests</p>
+            </div>
+            <div class="kpi-icon-box gold">
+              <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-details">
+              <h4>Active Brokers</h4>
+              <p>45 Agents</p>
+            </div>
+            <div class="kpi-icon-box sky">
+              <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- Charts & Feeds Layout -->
+        <div class="grid dashboard-grid-2">
+          <div style="display:flex; flex-direction:column; gap:2rem;">
+            <div class="dashboard-panel-card">
+              <h3>Sales & Deals Volume (H1 2026)</h3>
+              <div class="chart-container">
+                <svg class="chart-svg" id="chart-svg">
+                  <defs>
+                    <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="var(--secondary)" stop-opacity="0.2"/>
+                      <stop offset="100%" stop-color="var(--secondary)" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <div class="dashboard-panel-card">
+              <h3>Pending Registry Approvals</h3>
+              <div class="dashboard-table-wrapper">
+                <table class="dashboard-table">
+                  <thead>
+                    <tr>
+                      <th>Listing Name</th>
+                      <th>Submitting Advisor</th>
+                      <th>City</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>The Obsidian Glass Mansion</strong></td>
+                      <td>Vikram Malhotra</td>
+                      <td>Delhi</td>
+                      <td><button class="btn btn-primary btn-sm" style="padding:0.25rem 0.75rem; font-size:0.8rem;">Approve</button></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Apex Corporate Suite</strong></td>
+                      <td>Aanya Sen</td>
+                      <td>Pune</td>
+                      <td><button class="btn btn-primary btn-sm" style="padding:0.25rem 0.75rem; font-size:0.8rem;">Approve</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:2rem;">
+            <div class="dashboard-panel-card">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; border-bottom: 1px solid var(--slate-100); padding-bottom:0.5rem;">
+                <h3 style="margin:0; border:none; padding:0;">Alert Notifications</h3>
+                <button class="btn btn-outline-gold btn-sm" id="clear-notify-btn" style="padding:2px 8px; font-size:0.75rem;">Clear All</button>
+              </div>
+              
+              <div class="activity-timeline">
+                <div class="timeline-event">
+                  <span class="timeline-event-dot"></span>
+                  <div class="timeline-event-info">
+                    <h5>New Account Created</h5>
+                    <p>Patron Bhargavi registered from Hyderabad.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-event">
+                  <span class="timeline-event-dot"></span>
+                  <div class="timeline-event-info">
+                    <h5>Booking Request Filed</h5>
+                    <p>ECR Beachside Villa slot booked by Client A.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-event">
+                  <span class="timeline-event-dot"></span>
+                  <div class="timeline-event-info">
+                    <h5>Plot title uploaded</h5>
+                    <p>Plot-10 clearance uploaded by Rajesh K.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-panel-card">
+              <h3>Broker Briefing Agenda</h3>
+              <div style="display:flex; flex-direction:column; gap:0.5rem;">
+                <div style="padding:0.5rem; background:var(--slate-50); border-radius:4px; font-size:0.85rem;">
+                  <strong>10:00 AM</strong> - Weekly Advisor Pipeline Sync
+                </div>
+                <div style="padding:0.5rem; background:var(--slate-50); border-radius:4px; font-size:0.85rem;">
+                  <strong>03:00 PM</strong> - Compliance Board Title Audit
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- KPI Grid -->
-      <section class="dashboard-kpis">
-        <div class="kpi-card">
-          <div class="kpi-details">
-            <h4>Sales Revenue</h4>
-            <p>$18.4M</p>
+      <!-- PANEL 2: Master Properties Management -->
+      <div class="dashboard-tab-panel" id="admin-tab-properties">
+        <div class="dashboard-header-row">
+          <div>
+            <h1>Master Properties Listing Control</h1>
+            <p style="color: var(--slate-500);">Review, approve, modify, or unpublish active portal real estate items.</p>
           </div>
-          <div class="kpi-icon-box green">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 12.9 12 13.5 12 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H6c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+          <button class="btn btn-primary btn-sm btn-shimmer">+ Add New Listing</button>
+        </div>
+        <div class="dashboard-panel-card">
+          <div class="dashboard-table-wrapper">
+            <table class="dashboard-table">
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Category</th>
+                  <th>Location</th>
+                  <th>Price</th>
+                  <th>Broker</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>The Golden Crest Villa</strong></td>
+                  <td>Villa</td>
+                  <td>Hyderabad</td>
+                  <td>$4,850,000</td>
+                  <td>Vikram Malhotra</td>
+                  <td><span class="badge-status approved">Published</span></td>
+                  <td><button class="btn btn-outline-gold btn-sm">Edit</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Skyline Premium Penthouse</strong></td>
+                  <td>Apartment</td>
+                  <td>Mumbai</td>
+                  <td>$2,950,000</td>
+                  <td>Aanya Sen</td>
+                  <td><span class="badge-status approved">Published</span></td>
+                  <td><button class="btn btn-outline-gold btn-sm">Edit</button></td>
+                </tr>
+                <tr>
+                  <td><strong>Elysian Farm Estate</strong></td>
+                  <td>Farmhouse</td>
+                  <td>Delhi NCR</td>
+                  <td>$6,200,000</td>
+                  <td>Rajesh Kulkarni</td>
+                  <td><span class="badge-status approved">Published</span></td>
+                  <td><button class="btn btn-outline-gold btn-sm">Edit</button></td>
+                </tr>
+                <tr>
+                  <td><strong>The Obsidian Glass Mansion</strong></td>
+                  <td>Villa</td>
+                  <td>Delhi NCR</td>
+                  <td>$7,900,000</td>
+                  <td>Meera Nair</td>
+                  <td><span class="badge-status pending">Pending Review</span></td>
+                  <td><button class="btn btn-primary btn-sm">Approve</button></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+      </div>
 
-        <div class="kpi-card">
-          <div class="kpi-details">
-            <h4>Active Listings</h4>
-            <p>1,482 Listings</p>
-          </div>
-          <div class="kpi-icon-box blue">
-            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+      <!-- PANEL 3: Active Brokers Roster -->
+      <div class="dashboard-tab-panel" id="admin-tab-agents">
+        <div class="dashboard-header-row">
+          <div>
+            <h1>Advisory Brokers Roster</h1>
+            <p style="color: var(--slate-500);">Performance metrics and active portfolios of certified Stackly brokers.</p>
           </div>
         </div>
-
-        <div class="kpi-card">
-          <div class="kpi-details">
-            <h4>Booking Requests</h4>
-            <p>24 Requests</p>
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap:1.5rem;">
+          <div class="dashboard-panel-card" style="text-align:center;">
+            <img src="images/agents/agent-1.jpg" style="width:80px; height:80px; border-radius:50%; object-fit:cover; object-position:center top; border:2px solid var(--secondary); margin:0 auto 1rem;">
+            <h4>Vikram Malhotra</h4>
+            <p style="font-size:0.8rem; color:var(--slate-500); margin-bottom:0.5rem;">Managing Partner • Luxury Sales</p>
+            <p style="font-size:0.85rem; font-weight:700; color:var(--primary);">Total Volume: $42.5M</p>
+            <button class="btn btn-outline-gold btn-sm" style="width:100%; margin-top:1rem;">View Dossier</button>
           </div>
-          <div class="kpi-icon-box gold">
-            <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+
+          <div class="dashboard-panel-card" style="text-align:center;">
+            <img src="images/agents/agent-2.jpg" style="width:80px; height:80px; border-radius:50%; object-fit:cover; object-position:center top; border:2px solid var(--secondary); margin:0 auto 1rem;">
+            <h4>Aanya Sen</h4>
+            <p style="font-size:0.8rem; color:var(--slate-500); margin-bottom:0.5rem;">Senior Vice President • Penthouses</p>
+            <p style="font-size:0.85rem; font-weight:700; color:var(--primary);">Total Volume: $28.9M</p>
+            <button class="btn btn-outline-gold btn-sm" style="width:100%; margin-top:1rem;">View Dossier</button>
+          </div>
+
+          <div class="dashboard-panel-card" style="text-align:center;">
+            <img src="images/agents/agent-3.jpg" style="width:80px; height:80px; border-radius:50%; object-fit:cover; object-position:center top; border:2px solid var(--secondary); margin:0 auto 1rem;">
+            <h4>Rajesh Kulkarni</h4>
+            <p style="font-size:0.8rem; color:var(--slate-500); margin-bottom:0.5rem;">Director • Commercial Assets</p>
+            <p style="font-size:0.85rem; font-weight:700; color:var(--primary);">Total Volume: $36.2M</p>
+            <button class="btn btn-outline-gold btn-sm" style="width:100%; margin-top:1rem;">View Dossier</button>
           </div>
         </div>
+      </div>
 
-        <div class="kpi-card">
-          <div class="kpi-details">
-            <h4>Active Brokers</h4>
-            <p>45 Agents</p>
-          </div>
-          <div class="kpi-icon-box sky">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+      <!-- PANEL 4: Customers Directory -->
+      <div class="dashboard-tab-panel" id="admin-tab-customers">
+        <div class="dashboard-header-row">
+          <div>
+            <h1>Registered Patron Directory</h1>
+            <p style="color: var(--slate-500);">Verified high-net-worth client profiles and investment preferences.</p>
           </div>
         </div>
-      </section>
+        <div class="dashboard-panel-card">
+          <div class="dashboard-table-wrapper">
+            <table class="dashboard-table">
+              <thead>
+                <tr>
+                  <th>Client Name</th>
+                  <th>Email Address</th>
+                  <th>Tier</th>
+                  <th>Enquiries</th>
+                  <th>Registration Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Bhargavi Garipalli</strong></td>
+                  <td>bhargavi@example.com</td>
+                  <td><span class="badge-status approved">Gold VIP</span></td>
+                  <td>14 Enquiries</td>
+                  <td>Jan 12, 2026</td>
+                  <td><span class="badge-status approved">Active</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Rohan Singhania</strong></td>
+                  <td>rohan.s@example.com</td>
+                  <td><span class="badge-status approved">Platinum VIP</span></td>
+                  <td>22 Enquiries</td>
+                  <td>Feb 04, 2026</td>
+                  <td><span class="badge-status approved">Active</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Priya Merchant</strong></td>
+                  <td>priya.m@example.com</td>
+                  <td><span class="badge-status pending">Silver Patron</span></td>
+                  <td>6 Enquiries</td>
+                  <td>Mar 19, 2026</td>
+                  <td><span class="badge-status approved">Active</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
-      <!-- Charts & Feeds Layout -->
-      <div class="grid dashboard-grid-2">
-        <!-- Revenue line chart panel -->
-        <div style="display:flex; flex-direction:column; gap:2rem;">
+      <!-- PANEL 5: Bookings Queue -->
+      <div class="dashboard-tab-panel" id="admin-tab-bookings">
+        <div class="dashboard-header-row">
+          <div>
+            <h1>Global Viewing Bookings Queue</h1>
+            <p style="color: var(--slate-500);">Approve and dispatch calendar slots for site tours and negotiations.</p>
+          </div>
+        </div>
+        <div class="dashboard-panel-card">
+          <div class="dashboard-table-wrapper">
+            <table class="dashboard-table">
+              <thead>
+                <tr>
+                  <th>Request ID</th>
+                  <th>Client</th>
+                  <th>Property Title</th>
+                  <th>Assigned Broker</th>
+                  <th>Schedule</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#REQ-8021</td>
+                  <td>Bhargavi Garipalli</td>
+                  <td>Infinity Bay Retreat</td>
+                  <td>Vikram Malhotra</td>
+                  <td>July 22, 2026 • 02:00 PM</td>
+                  <td><button class="btn btn-primary btn-sm">Confirm Slot</button></td>
+                </tr>
+                <tr>
+                  <td>#REQ-8022</td>
+                  <td>Rohan Singhania</td>
+                  <td>Golden Crest Villa</td>
+                  <td>Aanya Sen</td>
+                  <td>July 23, 2026 • 10:30 AM</td>
+                  <td><button class="btn btn-primary btn-sm">Confirm Slot</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 6: Revenue & Financials -->
+      <div class="dashboard-tab-panel" id="admin-tab-revenue">
+        <div class="dashboard-header-row">
+          <div>
+            <h1>Financial & Revenue Ledger</h1>
+            <p style="color: var(--slate-500);">Macro transaction splits, commission ledgers, and escrow audit figures.</p>
+          </div>
+          <button class="btn btn-outline-gold btn-sm">Export Audit PDF</button>
+        </div>
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap:1.5rem; margin-bottom:2rem;">
           <div class="dashboard-panel-card">
-            <h3>Sales & Deals Volume (H1 2026)</h3>
-            <div class="chart-container">
-              <svg class="chart-svg" id="chart-svg">
-                <defs>
-                  <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="var(--secondary)" stop-opacity="0.2"/>
-                    <stop offset="100%" stop-color="var(--secondary)" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <!-- Generated dynamically by dashboards.js -->
-              </svg>
-            </div>
+            <h4>H1 Gross Sales</h4>
+            <p style="font-size:1.8rem; font-weight:800; color:var(--primary);">$107,600,000</p>
           </div>
-
-          <!-- Approvals queue -->
           <div class="dashboard-panel-card">
-            <h3>Pending Registry Approvals</h3>
-            <div class="dashboard-table-wrapper">
-              <table class="dashboard-table">
-                <thead>
-                  <tr>
-                    <th>Listing Name</th>
-                    <th>Submitting Advisor</th>
-                    <th>City</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>The Obsidian Glass Mansion</strong></td>
-                    <td>Vikram Malhotra</td>
-                    <td>Delhi</td>
-                    <td><button class="btn btn-primary btn-sm" onclick="alert('Vetted property successfully approved and published!')" style="padding:0.25rem 0.75rem; font-size:0.8rem;">Approve</button></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Apex Corporate Suite</strong></td>
-                    <td>Aanya Sen</td>
-                    <td>Pune</td>
-                    <td><button class="btn btn-primary btn-sm" onclick="alert('Vetted property successfully approved and published!')" style="padding:0.25rem 0.75rem; font-size:0.8rem;">Approve</button></td>
-                  </tr>
-                </tbody>
-              </table>
+            <h4>Net Commission (2.5%)</h4>
+            <p style="font-size:1.8rem; font-weight:800; color:var(--secondary);">$2,690,000</p>
+          </div>
+          <div class="dashboard-panel-card">
+            <h4>Average Deal Size</h4>
+            <p style="font-size:1.8rem; font-weight:800; color:var(--accent);">$4,250,000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 7: Audit Reports -->
+      <div class="dashboard-tab-panel" id="admin-tab-reports">
+        <div class="dashboard-header-row">
+          <div>
+            <h1>Compliance & Governance Reports</h1>
+            <p style="color: var(--slate-500);">Regulatory compliance audits, title clearance verification records, and tax filings.</p>
+          </div>
+        </div>
+        <div class="dashboard-panel-card">
+          <div style="display:flex; flex-direction:column; gap:1rem;">
+            <div style="padding:1rem; border:1px solid var(--slate-200); border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h5 style="margin:0;">Q2 RERA Compliance Audit Report</h5>
+                <p style="font-size:0.8rem; color:var(--slate-500); margin:0;">Verified 100% legal compliance across 1,482 listed residential properties.</p>
+              </div>
+              <button class="btn btn-outline-gold btn-sm">Download PDF</button>
+            </div>
+            <div style="padding:1rem; border:1px solid var(--slate-200); border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h5 style="margin:0;">NRI Foreign Direct Investment Clearance Brief</h5>
+                <p style="font-size:0.8rem; color:var(--slate-500); margin:0;">FDI escrow banking compliance audit for international buyers.</p>
+              </div>
+              <button class="btn btn-outline-gold btn-sm">Download PDF</button>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Right column calendar schedule & notifications list -->
-        <div style="display:flex; flex-direction:column; gap:2rem;">
-          <!-- Active timeline -->
-          <div class="dashboard-panel-card">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; border-bottom: 1px solid var(--slate-100); padding-bottom:0.5rem;">
-              <h3 style="margin:0; border:none; padding:0;">Alert Notifications</h3>
-              <button class="btn btn-outline-gold btn-sm" id="clear-notify-btn" style="padding:2px 8px; font-size:0.75rem;">Clear All</button>
-            </div>
-            
-            <div class="activity-timeline">
-              <div class="timeline-event">
-                <span class="timeline-event-dot"></span>
-                <div class="timeline-event-info">
-                  <h5>New Account Created</h5>
-                  <p>Patron Bhargavi registered from Hyderabad.</p>
-                </div>
-              </div>
-
-              <div class="timeline-event">
-                <span class="timeline-event-dot"></span>
-                <div class="timeline-event-info">
-                  <h5>Booking Request Filed</h5>
-                  <p>ECR Beachside Villa slot booked by Client A.</p>
-                </div>
-              </div>
-
-              <div class="timeline-event">
-                <span class="timeline-event-dot"></span>
-                <div class="timeline-event-info">
-                  <h5>Plot title uploaded</h5>
-                  <p>Plot-10 clearance uploaded by Rajesh K.</p>
-                </div>
-              </div>
-            </div>
+      <!-- PANEL 8: Analytics -->
+      <div class="dashboard-tab-panel" id="admin-tab-analytics">
+        <div class="dashboard-header-row">
+          <div>
+            <h1>Portal Traffic & Conversion Analytics</h1>
+            <p style="color: var(--slate-500);">User engagement, lead funnel conversion metrics, and regional interest maps.</p>
           </div>
-
-          <!-- Calendar -->
+        </div>
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap:1.5rem;">
           <div class="dashboard-panel-card">
-            <h3>Broker Briefing Agenda</h3>
-            <div style="display:flex; flex-direction:column; gap:0.5rem;">
-              <div style="padding:0.5rem; background:var(--slate-50); border-radius:4px; font-size:0.85rem;">
-                <strong>10:00 AM</strong> - Weekly Advisor Pipeline Sync
-              </div>
-              <div style="padding:0.5rem; background:var(--slate-50); border-radius:4px; font-size:0.85rem;">
-                <strong>03:00 PM</strong> - Compliance Board Title Audit
-              </div>
-            </div>
+            <h4>Lead Conversion Rate</h4>
+            <p style="font-size:1.8rem; font-weight:800; color:var(--accent);">14.8%</p>
+            <span style="font-size:0.8rem; color:var(--slate-500);">+2.4% vs last quarter</span>
           </div>
+          <div class="dashboard-panel-card">
+            <h4>Top Searched City</h4>
+            <p style="font-size:1.8rem; font-weight:800; color:var(--primary);">Hyderabad</p>
+            <span style="font-size:0.8rem; color:var(--slate-500);">42% total portal volume</span>
+          </div>
+          <div class="dashboard-panel-card">
+            <h4>Mobile Viewers</h4>
+            <p style="font-size:1.8rem; font-weight:800; color:var(--highlight);">68.2%</p>
+            <span style="font-size:0.8rem; color:var(--slate-500);">High touch responsive</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 9: Console Settings -->
+      <div class="dashboard-tab-panel" id="admin-tab-settings">
+        <div class="dashboard-header-row">
+          <div>
+            <h1>System Administration Controls</h1>
+            <p style="color: var(--slate-500);">Console parameters, API keys, and maintenance switches.</p>
+          </div>
+        </div>
+        <div class="dashboard-panel-card">
+          <h3>Platform Configuration</h3>
+          <form onsubmit="event.preventDefault(); alert('System configuration parameters saved!');">
+            <div style="margin-bottom:1rem;">
+              <label class="form-label">Platform Portal Name</label>
+              <input type="text" class="form-control" value="Stackly Estates Luxury Portal">
+            </div>
+            <div style="margin-bottom:1rem;">
+              <label class="form-label">Admin Notification Dispatch Email</label>
+              <input type="email" class="form-control" value="admin@stacklyestates.com">
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm btn-shimmer">Save System Settings</button>
+          </form>
         </div>
       </div>
     </main>

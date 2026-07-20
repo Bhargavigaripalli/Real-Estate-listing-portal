@@ -159,13 +159,13 @@
         <!-- General Inquiry Form -->
         <form class="contact-form-pane active" id="form-general">
           <div class="form-group">
-            <label class="form-label" for="gen-name">Your Full Name</label>
-            <input type="text" class="form-control" id="gen-name" placeholder="John Doe" required>
+            <label class="form-label" for="gen-name">Your Full Name (Alphabets only, max 16 letters)</label>
+            <input type="text" class="form-control" id="gen-name" placeholder="John Doe" maxlength="16" pattern="[A-Za-z\s]{1,16}" title="Name should contain only alphabets and be at most 16 characters." required>
           </div>
 
           <div class="form-group">
             <label class="form-label" for="gen-email">Email Address</label>
-            <input type="email" class="form-control" id="gen-email" placeholder="john@example.com" required>
+            <input type="email" class="form-control" id="gen-email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
           </div>
 
           <div class="form-group">
@@ -179,13 +179,13 @@
         <!-- Business Enquiry Form -->
         <form class="contact-form-pane" id="form-business">
           <div class="form-group">
-            <label class="form-label" for="bus-company">Company Name</label>
-            <input type="text" class="form-control" id="bus-company" placeholder="Beta Corp India" required>
+            <label class="form-label" for="bus-company">Company Name (Alphabets only, max 16 letters)</label>
+            <input type="text" class="form-control" id="bus-company" placeholder="Beta Corp India" maxlength="16" pattern="[A-Za-z\s]{1,16}" title="Name should contain only alphabets and be at most 16 characters." required>
           </div>
 
           <div class="form-group">
             <label class="form-label" for="bus-email">Corporate Email</label>
-            <input type="email" class="form-control" id="bus-email" placeholder="investor@betacorp.com" required>
+            <input type="email" class="form-control" id="bus-email" placeholder="investor@betacorp.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
           </div>
 
           <div class="form-group">
@@ -255,7 +255,7 @@
   <footer>
     <div class="container footer-grid">
       <div class="footer-col footer-about">
-        <a href="index.html" class="logo">
+        <a href="404.html" class="logo">
           <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm5 15h-2v-4H9v4H7v-6.17l5-4.5 5 4.5V18z"/></svg>
           <span>STACKLY <span class="gold">ESTATES</span></span>
         </a>
@@ -265,9 +265,9 @@
       <div class="footer-col">
         <h3>Quick Links</h3>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="properties.html">Our Properties</a></li>
+          <li><a href="404.html">Home</a></li>
+          <li><a href="404.html">About Us</a></li>
+          <li><a href="404.html">Our Properties</a></li>
         </ul>
       </div>
 
@@ -284,7 +284,7 @@
         <p>Subscribe to receive off-market alerts.</p>
         <form id="footer-newsletter-form">
           <input type="email" placeholder="Your Email Address" required>
-          <button type="submit">Go</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </div>
@@ -299,6 +299,17 @@
   <script src="js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Input sanitization: Allow only alphabets and spaces, max 16 chars
+      const genName = document.getElementById('gen-name');
+      const busCompany = document.getElementById('bus-company');
+
+      const restrictToAlphabets = (e) => {
+        e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, '').slice(0, 16);
+      };
+
+      if (genName) genName.addEventListener('input', restrictToAlphabets);
+      if (busCompany) busCompany.addEventListener('input', restrictToAlphabets);
+
       // Tab switching logic
       const tabGen = document.getElementById('tab-general-btn');
       const tabBus = document.getElementById('tab-business-btn');
@@ -321,10 +332,9 @@
         });
       }
 
-      // Submit feedback alerts
+      // Submit navigation to 404.html
       const handleFormSubmit = (e) => {
         e.preventDefault();
-        alert("Enquiry successfully recorded! Our corporate concierge will schedule a conference call shortly.");
         window.location.href = '404.html';
       };
 

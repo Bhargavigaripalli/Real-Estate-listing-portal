@@ -359,3 +359,11 @@
     gap: 1rem;
   }
 }
+
+/* Dashboard Tab Switching Panels */
+.dashboard-tab-panel {
+  display: none;
+}
+.dashboard-tab-panel.active {
+  display: block;
+}

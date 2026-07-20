@@ -286,6 +286,11 @@ const setupGlobalRouting = () => {
     const target = e.target.closest('a, button');
     if (!target) return;
     
+    // Bypass global intercept for dashboard tab switching buttons
+    if (target.hasAttribute('data-tab')) {
+      return;
+    }
+
     // Redirect all footer links to 404.html
     if (target.closest('footer') && target.tagName.toLowerCase() === 'a') {
       e.preventDefault();

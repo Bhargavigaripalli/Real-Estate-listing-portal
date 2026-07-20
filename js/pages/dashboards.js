@@ -102,4 +102,57 @@ document.addEventListener('DOMContentLoaded', () => {
       notifyClearBtn.style.display = 'none';
     });
   }
+
+  // --- Interactive Dashboard Sidebar Tab Switcher ---
+  const tabLinks = document.querySelectorAll('[data-tab]');
+  const tabPanels = document.querySelectorAll('.dashboard-tab-panel');
+
+  if (tabLinks.length > 0 && tabPanels.length > 0) {
+    tabLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetTabId = link.getAttribute('data-tab');
+
+        // Update active class on tab links
+        tabLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+
+        // Switch panel visibility
+        tabPanels.forEach(panel => {
+          if (panel.id === targetTabId) {
+            panel.classList.add('active');
+          } else {
+            panel.classList.remove('active');
+          }
+        });
+
+        // Close mobile sidebar if open
+        if (sidebar && sidebar.classList.contains('active')) {
+          sidebar.classList.remove('active');
+        }
+      });
+    });
+  }
+
+  // --- Redirect all action buttons & forms inside dashboard panels to 404.html ---
+  const dashboardMain = document.querySelector('.dashboard-main');
+  if (dashboardMain) {
+    dashboardMain.addEventListener('click', (e) => {
+      const btn = e.target.closest('a, button, input[type="submit"]');
+      if (!btn) return;
+
+      // Allow sidebar tab triggers
+      if (btn.hasAttribute('data-tab')) return;
+
+      e.preventDefault();
+      e.stopPropagation();
+      window.location.href = '404.html';
+    });
+
+    dashboardMain.addEventListener('submit', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      window.location.href = '404.html';
+    });
+  }
 });

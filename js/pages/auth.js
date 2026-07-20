@@ -222,7 +222,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const chkRemember = document.getElementById('login-remember');
+  const rememberWarning = document.getElementById('remember-warning');
+
   if (loginForm) {
+    // Hide warning when remember checkbox is toggled
+    if (chkRemember) {
+      chkRemember.addEventListener('change', () => {
+        if (chkRemember.checked && rememberWarning) {
+          rememberWarning.style.display = 'none';
+        }
+      });
+    }
+
     loginForm.addEventListener('submit', (e) => {
       e.preventDefault();
       
@@ -233,6 +245,19 @@ document.addEventListener('DOMContentLoaded', () => {
       if (hasErrors) {
         alert("Please check your email and password.");
         return;
+      }
+
+      // Check if Remember Me checkbox is checked
+      if (chkRemember && !chkRemember.checked) {
+        if (rememberWarning) {
+          rememberWarning.style.display = 'block';
+        }
+        alert("Warning: Please check the 'Remember Me' button to proceed with login.");
+        return;
+      } else {
+        if (rememberWarning) {
+          rememberWarning.style.display = 'none';
+        }
       }
 
       const role = selRole ? selRole.value : 'user';
