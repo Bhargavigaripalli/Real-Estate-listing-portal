@@ -99,6 +99,26 @@
   color: #FFFFFF;
 }
 
+.auth-form button[type="submit"] {
+  background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 50%, #C89B3C 100%) !important;
+  color: #070E1B !important;
+  font-weight: 800 !important;
+  font-size: 1.05rem !important;
+  letter-spacing: 0.5px !important;
+  border: none !important;
+  border-radius: var(--radius-md) !important;
+  padding: 0.85rem 1.5rem !important;
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4) !important;
+  cursor: pointer !important;
+  transition: all var(--transition-normal) !important;
+  margin-top: var(--spacing-sm);
+  width: 100%;
+}
+.auth-form button[type="submit"]:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 25px rgba(245, 158, 11, 0.6) !important;
+}
+
 .auth-meta-row {
   display: flex;
   justify-content: space-between;

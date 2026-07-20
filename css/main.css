@@ -232,26 +232,19 @@ header.scrolled {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--font-sans);
-  font-weight: 800;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  color: var(--white);
+  text-decoration: none;
   cursor: pointer;
 }
-header.scrolled .logo {
-  color: var(--white);
+.logo-img {
+  height: 50px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  filter: brightness(0) invert(1) drop-shadow(0 0 1px rgba(255, 255, 255, 0.8));
+  transition: transform var(--transition-normal);
 }
-.logo svg {
-  width: 32px;
-  height: 32px;
-  fill: var(--secondary);
-}
-.logo span {
-  color: var(--white);
-}
-.logo span.gold {
-  color: var(--secondary);
+.logo:hover .logo-img {
+  transform: scale(1.08);
 }
 
 .nav-links {
