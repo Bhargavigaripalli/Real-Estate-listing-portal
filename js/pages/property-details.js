@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // We will generate 5 thumbnails (using property image and other standard property JPEGs as mock variations)
     const gallerySrcs = [
       property.image,
-      "images/properties/villa-2.jpg",
-      "images/properties/apt-2.jpg",
-      "images/properties/villa-3.jpg",
-      "images/properties/kitchen-1.jpg"
+      "images/properties/villa-2.webp",
+      "images/properties/apt-2.webp",
+      "images/properties/villa-3.webp",
+      "images/properties/kitchen-1.webp"
     ];
 
     gallerySrcs.forEach((src, index) => {

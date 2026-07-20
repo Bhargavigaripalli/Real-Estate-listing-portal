@@ -8,7 +8,7 @@ const AGENTS = [
     experience: "12 Years",
     sold: 148,
     rating: 4.9,
-    image: "images/agents/agent-1.jpg",
+    image: "images/agents/agent-1.webp",
     phone: "+91 98765 43210",
     email: "vikram@stacklyestates.com"
   },
@@ -19,7 +19,7 @@ const AGENTS = [
     experience: "8 Years",
     sold: 92,
     rating: 4.8,
-    image: "images/agents/agent-2.jpg",
+    image: "images/agents/agent-2.webp",
     phone: "+91 98765 43211",
     email: "aanya@stacklyestates.com"
   },
@@ -30,7 +30,7 @@ const AGENTS = [
     experience: "15 Years",
     sold: 210,
     rating: 4.95,
-    image: "images/agents/agent-3.jpg",
+    image: "images/agents/agent-3.webp",
     phone: "+91 98765 43212",
     email: "rajesh@stacklyestates.com"
   },
@@ -41,7 +41,7 @@ const AGENTS = [
     experience: "6 Years",
     sold: 54,
     rating: 4.7,
-    image: "images/agents/agent-4.jpg",
+    image: "images/agents/agent-4.webp",
     phone: "+91 98765 43213",
     email: "meera@stacklyestates.com"
   }
@@ -60,7 +60,7 @@ const PROPERTIES = [
     baths: 6,
     area: 7200,
     parking: 3,
-    image: "images/properties/villa-1.jpg",
+    image: "images/properties/villa-1.webp",
     description: "An architectural masterpiece in the ultra-luxury enclave of Jubilee Hills. This palatial estate features double-height ceilings, a private infinity pool overlooking the city skyline, a temperature-controlled wine cellar, and integrated smart-home automation.",
     featured: true,
     amenities: ["Swimming Pool", "Private Gym", "Home Theater", "24/7 Security", "Wine Cellar", "Smart Home"],
@@ -78,7 +78,7 @@ const PROPERTIES = [
     baths: 5,
     area: 4500,
     parking: 2,
-    image: "images/properties/apt-1.jpg",
+    image: "images/properties/apt-1.webp",
     description: "Suspended above the Arabian Sea, this magnificent penthouse provides panoramic views of the Bandra-Worli Sea Link. Features custom Italian marble flooring, high-end chef's kitchen, and direct private elevator entry.",
     featured: true,
     amenities: ["Sea View", "Concierge Service", "Smart Home", "Swimming Pool", "High Ceilings", "Private Elevator"],
@@ -96,7 +96,7 @@ const PROPERTIES = [
     baths: 7,
     area: 12500,
     parking: 6,
-    image: "images/properties/farm-1.jpg",
+    image: "images/properties/farm-1.webp",
     description: "Spreading across two acres of lush manicured landscaping, this farmhouse offers ultimate privacy. Includes a private tennis court, detached guest house, sprawling wrap-around verandas, and organic fruit orchards.",
     featured: true,
     amenities: ["Sprawling Lawn", "Tennis Court", "Guest House", "24/7 Security", "Fireplace", "Water Body"],
@@ -114,7 +114,7 @@ const PROPERTIES = [
     baths: 12,
     area: 32000,
     parking: 15,
-    image: "images/properties/comm-1.jpg",
+    image: "images/properties/comm-1.webp",
     description: "A state-of-the-art corporate headquarters building built to absolute Grade-A specifications. Offers high efficiency open-plan layouts, multi-tier safety standards, and sustainable LEED Gold certified design.",
     featured: false,
     amenities: ["LEED Certified", "Fibre Connectivity", "Cafeteria", "Ample Parking", "Central AC", "Power Backup"],
@@ -132,7 +132,7 @@ const PROPERTIES = [
     baths: 4,
     area: 5800,
     parking: 2,
-    image: "images/properties/villa-2.jpg",
+    image: "images/properties/villa-2.webp",
     description: "A modern beachside sanctuary capturing cool sea breezes and serene sunrises. Featuring floor-to-ceiling glass walls, wrap-around pool decking, and high-quality premium fittings throughout.",
     featured: true,
     amenities: ["Beach Access", "Infinity Pool", "Private Deck", "Solar Power", "24/7 Security"],
@@ -150,7 +150,7 @@ const PROPERTIES = [
     baths: 4,
     area: 6400,
     parking: 4,
-    image: "images/properties/office-1.jpg",
+    image: "images/properties/office-1.webp",
     description: "An elegant, ready-to-move-in corporate office suite designed for modern startups or consulting firms. Fully plug-and-play with ergonomic conference rooms, glass cabins, and a pantry.",
     featured: false,
     amenities: ["Plug & Play", "High Speed Internet", "Executive Lounge", "24/7 Access"],
@@ -168,7 +168,7 @@ const PROPERTIES = [
     baths: 4,
     area: 4800,
     parking: 2,
-    image: "images/properties/house-1.jpg",
+    image: "images/properties/house-1.webp",
     description: "A classical colonial-style mansion nestling in Pune's most leafiest neighborhood. Combining old-world charm with modern enhancements like thermal insulation and updated plumbing.",
     featured: false,
     amenities: ["Private Garden", "Servant Quarter", "High Ceilings", "Teak Flooring"],
@@ -186,7 +186,7 @@ const PROPERTIES = [
     baths: 0,
     area: 15000,
     parking: 0,
-    image: "images/properties/plot-1.jpg",
+    image: "images/properties/plot-1_11zon.webp",
     description: "A premium corner plot ideal for bespoke villa construction or high-end residential development. Strategically positioned with close accessibility to international schools and the Financial District.",
     featured: false,
     amenities: ["Corner Plot", "Road Facing", "Gated Community", "Clear Title"],
@@ -204,7 +204,7 @@ const PROPERTIES = [
     baths: 8,
     area: 11000,
     parking: 5,
-    image: "images/properties/villa-3.jpg",
+    image: "images/properties/villa-3.webp",
     description: "A striking minimalist villa featuring black structural steel and expansive smart glass panes. Incorporates an indoor climate-controlled pool, private elevator, automated home theater, and an observation deck.",
     featured: true,
     amenities: ["Indoor Pool", "Observation Deck", "Smart Glass", "Home Theater", "Private Elevator"],
@@ -219,7 +219,7 @@ const BLOGS = [
     category: "Investment",
     date: "July 12, 2026",
     summary: "Exploring the dynamic growth metrics of Indian high-end real estate, assessing residential vs commercial developments for high returns.",
-    image: "images/blogs/blog-1.jpg",
+    image: "images/blogs/blog-1 (1).webp",
     author: "Rajesh Kulkarni"
   },
   {
@@ -228,7 +228,7 @@ const BLOGS = [
     category: "Design",
     date: "June 28, 2026",
     summary: "From glass walls that adapt to outside lighting to touchless environments, discover the luxury tech changing modern lifestyles.",
-    image: "images/blogs/blog-2.jpg",
+    image: "images/blogs/blog-2 (1).webp",
     author: "Aanya Sen"
   },
   {
@@ -237,7 +237,7 @@ const BLOGS = [
     category: "Tips",
     date: "May 15, 2026",
     summary: "Avoid zoning and title-ownership pitfalls. A comprehensive legal checklist curated by our leading compliance advisors.",
-    image: "images/blogs/blog-3.jpg",
+    image: "images/blogs/blog-3 (1).webp",
     author: "Vikram Malhotra"
   }
 ];
@@ -286,6 +286,11 @@ const setupGlobalRouting = () => {
     const target = e.target.closest('a, button');
     if (!target) return;
     
+    // Bypass global intercept for submit buttons and auth forms
+    if (target.type === 'submit' || target.closest('.auth-form')) {
+      return;
+    }
+
     // Bypass global intercept for dashboard tab switching buttons
     if (target.hasAttribute('data-tab')) {
       return;
