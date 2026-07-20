@@ -296,20 +296,22 @@ const setupGlobalRouting = () => {
       return;
     }
 
-    // Redirect all footer links to 404.html
+    const href = target.getAttribute('href');
+
+    // Allow core page navbar & footer links to route normally
+    if (href && ['index.html', 'about.html', 'properties.html', 'blog.html', 'contact.html'].includes(href)) {
+      return;
+    }
+
+    // Redirect remaining footer links (socials, categories, legal) to 404.html
     if (target.closest('footer') && target.tagName.toLowerCase() === 'a') {
       e.preventDefault();
       window.location.href = '404.html';
       return;
     }
-    
-    const text = target.innerText ? target.innerText.trim().toLowerCase() : '';
-    const href = target.getAttribute('href');
 
-    // Allow core page navbar links to route normally without interception
-    if (href && ['index.html', 'about.html', 'properties.html', 'blog.html', 'contact.html'].includes(href)) {
-      return;
-    }
+    const text = target.innerText ? target.innerText.trim().toLowerCase() : '';
+
     // "Get Started" -> create-account.html
     if (text === 'get started') {
       e.preventDefault();
